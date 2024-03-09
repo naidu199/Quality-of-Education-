@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 70px;
+            max-width: 25%;
+            height: 30%;
+            margin:  auto;
+            margin-top: 100px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #161515b5;
+            border-radius: 3px;
+            margin-bottom: 20px;
+
+
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 50%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .register-link a {
+            text-decoration: none;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <center>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="#" method="post">
+            <input type="text" id="userID" name="userID" placeholder="User ID" required>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+          <div class="register-link">
+            <span><a href="#">Forget-Password</a><br><br></span>
+            New User?
+            <a href="registration.html">Register</a>
+        </div>
+    </div>
+</center>
+</body>
+</html>

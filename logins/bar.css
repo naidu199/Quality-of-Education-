@@ -1,0 +1,33 @@
+.bar{
+	width: 1492px;
+	height: 104px;
+	position: relative;
+	background: white;
+}
+.logoname{
+	left: 117px;
+	top: 32px;
+	position: absolute;
+	color: black;
+	font-size: 36px;
+	font-family: Inter;
+	font-weight: 400;
+	word-wrap: break-word;
+}
+
+.logo{
+	width: 87px;
+	height: 74px;
+	left: 17px;
+	top: 15px;
+	position: absolute;
+}
+.bar .home:hover {
+    color: #FF5733;
+}
+a{
+	text-decoration: none;
+}
+a:hover{
+	color: lightsalmon;
+}
