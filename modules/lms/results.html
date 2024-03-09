@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Dashboard</title>
+    <style>
+       
+        
+        
+        .results {
+            margin-top: 200px;
+        }
+        body {
+    font-family: Arial, sans-serif;
+    background-color: #afdcec;
+    margin-top: 100px;
+}
+
+.dashboard-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    font-size: 24px;
+    color:black;
+}
+
+.quiz-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quiz-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.results {
+    margin-top: 20px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Student's Dashboard</h1>
+
+        
+
+        <!-- List of Quizzes -->
+        <h2>Quizzes:</h2>
+        <ul class="quiz-list">
+            <li class="quiz-item">
+                <span>Quiz 1</span>
+                <button class="view-results" data-quiz-id="1">View Results</button>
+            </li>
+            <li class="quiz-item">
+                <span>Quiz 2</span>
+                <button class="view-results" data-quiz-id="2">View Results</button>
+            </li>
+        </ul>
+
+        <!-- Results Section (Populated Dynamically) -->
+        <div class="results">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script>
+        // Simulated data for quiz results (replace with actual data)
+        const quizResults = {
+            1: [
+                { student: 'Student 1', score: 90 },
+                { student: 'Student 2', score: 85 },
+                { student: 'Student 3', score: 78 },
+            ],
+            2: [
+                { student: 'Student 1', score: 88 },
+                { student: 'Student 2', score: 92 },
+                { student: 'Student 3', score: 79 },
+            ],
+        };
+
+        // Function to populate and display quiz results
+        function displayResults(quizId) {
+            const resultsContainer = document.querySelector('.results');
+            resultsContainer.innerHTML = ''; // Clear previous results
+
+            const results = quizResults[quizId];
+
+            if (results) {
+                const resultList = document.createElement('ul');
+                resultList.classList.add('results-list');
+
+                results.forEach((result) => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = `${result.student}: ${result.score}`;
+                    resultList.appendChild(listItem);
+                });
+
+                resultsContainer.appendChild(resultList);
+            } else {
+                resultsContainer.textContent = 'No results available for this quiz.';
+            }
+        }
+
+        // Attach click event listeners to "View Results" buttons
+        const viewResultsButtons = document.querySelectorAll('.view-results');
+        viewResultsButtons.forEach((button) => {
+            button.addEventListener('click', () => {
+                const quizId = button.getAttribute('data-quiz-id');
+                displayResults(quizId);
+            });
+        });
+
+        // Function to handle adding assignments
+        const addAssignmentForm = document.getElementById('add-assignment-form');
+        addAssignmentForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+            const assignmentName = document.getElementById('assignment-name').value;
+
+            // Handle assignment creation (you can replace this with your logic)
+            console.log(`Assignment created: ${assignmentName}`);
+            document.getElementById('assignment-name').value = '';
+        });
+    </script>
+</body>
+</html>

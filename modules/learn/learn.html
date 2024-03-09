@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Development Material</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: cornsilk;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color:rgb(0, 0, 0);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            color: rgb(255, 255, 255);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        @media(max-width:650px){
+            .container .section{
+                width: 90%;
+                margin-left: 5px;
+            }
+        }
+        .section {
+            width: 95%;
+            padding: 20px;
+            background-color: #0073e6;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .section:hover {
+            background-color: #0254a6;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Communication Skills Development</h1>
+    </header>
+    <div class="container">
+        <div class="section" onclick="window.location.href = 'com.html';">
+            <h2>Effective Communication</h2>
+            <p>Learn how to improve your communication skills for personal and professional success</p>
+        </div>
+
+        <div class="section" onclick="window.location.href = 'interactive.html';">
+            <h2>Interactive Learning Module</h2>
+            <p>Engage in interactive modules to practice and enhance your communication abilities</p>
+        </div>
+
+        <div class="section" onclick="window.location.href = 'videos.html';">
+            <h2>Videos</h2>
+            <p>Watch our informative videos to easily enhance your communication skills</p>
+        </div>
+
+        <div class="section" onclick="window.location.href = 'article.html';">
+            <h2>Expert Articles</h2>
+            <p>Read insightful articles from communication experts on various topics</p>
+        </div>
+    </div>
+</body>
+</html>

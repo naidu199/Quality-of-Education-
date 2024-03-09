@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>material</title>
+	<style>
+		section{
+			height: 600px;
+			display: flex;
+			padding-top: 15px;
+		}
+		nav{
+			flex: 1;
+			background-color: rgb(160, 249, 219);
+			min-width: 10%;
+		}
+		nav ul{
+			list-style-type: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		li{
+			font-size: 18px;
+		}
+		li a{
+			padding: 5px 15px;
+			display: block;
+			text-decoration: none;
+			margin: 2px solid black;
+		}
+		li a:hover{
+			background-color: rgb(90, 251, 197);
+			color: black;
+		}
+		@media(max-width:700px){
+			nav{
+				min-width: 25%;
+				height: fit-content;
+			}
+		}
+	</style>
+	<link rel="stylesheet" href="edubridge.css">
+</head>
+<body>
+
+	<!-- <header>
+		<div class="bar">
+			<div class="logoname">EDU BRIDGE</div>
+				  <div  class="home" style=" width: 151px; height: 40px; left: 1020px; top: 30px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word "><a href="edubridge.html">Home</a></div>
+				  <div style="width: 151px; height: 40px; left: 1171px; top: 30px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word"><a href="">About</a></div>
+				  <div style="width: 151px; height: 40px; left: 1322px; top: 30px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word"><a href="">Help</a></div>
+			  <img class="logo" src="Screenshot (85).png">
+			</div>
+	</header> -->
+	<section>
+		<nav>
+			<ul>
+				<li><a href="books/prilems.pdf"target="Display">» Prelims</a></li>
+				<li><a href="books/chapter 1.pdf" target="Display">» Chapter 1</a></li>
+				<li><a href="books/chapter 2.pdf"target="Display">» Chapter 2</a></li>
+				<li><a href="books/chapter 3.pdf"target="Display">» Chapter 3</a></li>
+				<li><a href="books/chapter 4.pdf"target="Display">» Chapter 4</a></li>
+				<li><a href="books/chapter 5.pdf"target="Display">» Chapter 5</a></li>
+				<li><a href="books/chapter 6.pdf"target="Display">» Chapter 6</a></li>
+				<li><a href="books/chapter 7.pdf"target="Display">» Chapter 7</a></li>
+				<li><a href="books/chapter 4.pdf"target="Display">» Chapter 8</a></li>
+				<li><a href="books/chapter 1.pdf"target="Display">» Chapter 9</a></li>
+				<li><a href="books/chapter 2.pdf"target="Display">» Chapter 10</a></li>
+				<li><a href="books/book1.zip"target="Display">» Download complete book <br>as PDF</a></li>
+				<!-- <li><a href="">» Chapter 1</a></li> -->
+
+			</ul>
+		</nav>
+		<iframe src="books/prilems.pdf" frameborder="4" name="Display" width="100%"></iframe>
+	</section>
+
+</body>
+</html>

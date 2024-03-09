@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>form_home</title>
+	<style>
+
+
+h4,h1{
+	text-align: center;
+    justify-content: center;
+}
+h4{
+	font-size: 20px;
+}
+.main-content{
+	width: 100%;
+	/* height: 500px; */
+	/* background-color: blueviolet; */
+	margin: 50px 0px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.first{
+	width: 35%;
+	height: 270px;
+	border-radius: 24px;
+	box-shadow: 0  0px 10px black;
+}
+.one{
+	background-image: url(images/communication.jpeg);
+	background-repeat: no-repeat;
+			background-size: 100% 270px;
+}
+.two{
+	background-image: url(images/skill.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 270px;
+}
+
+
+     @media(max-width:650px){
+        .main-content{
+            flex-direction: column;
+        }
+        .first{
+		width: 90%;
+		margin-bottom: 60px;
+	}
+    }
+    .one{
+	background-image: url(images/test\ skills.jpeg);
+	background-repeat: no-repeat;
+			background-size: 100% 270px;
+}
+.two{
+	background-image: url(images/learn\ skills.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100% 270px;
+}
+.content {
+	/* background: rgba(0, 0, 0, 0.622); */
+
+		width: 100%;
+		/* position: absolute; */
+
+		/* font-size: 20px; */
+		font-family: Inter;
+		/* font-weight: 400; */
+		word-wrap: break-word;
+        margin-top: 250px;
+        text-decoration: none;
+}
+.content a{
+    text-decoration: none;
+    color: rgb(235, 54, 66);
+    font-weight: 400;
+    font-size: 40px;
+    border: 1px solid black;
+    background-color: rgb(255, 228, 122);
+    border-radius: 10px;
+}
+.content a:hover{
+	color: rgb(5, 157, 252);
+	text-decoration: none;
+ }
+
+	</style>
+</head>
+<body>
+    <center>
+	<h1>COMMUNICATION SKILLS</h1>
+	<h4>Experience the benefits of personalized guidance aimed at refining your communication skills. Elevate your ability to articulate ideas effectively and achieve excellence in your communication endeavors</h4>
+	<!-- <div class="card">
+		<div class="card-2">
+			<img src="images/test skills.jpeg" class="Statue-img">
+			<a href="speech_assignment.html" target="_self"class="info-btn1">TEST</a>
+		  </div>
+		<div class="card-3">
+		  <img src="images/learn skills.jpeg" class="Statue-img">
+		  <a href="" class="info-btn2">LEARN</a>
+	          </div>
+	</div> -->
+
+    <main>
+		<div class="main-content">
+			<div class="first one">
+				<div class="content">
+					<!-- <img src="images/test skills.jpeg" class="Statue-img"> -->
+			    <a href="speech_assignment.html" target="_self"class="info-btn1">TEST</a>
+
+				</div>
+			</div>
+			<div class="first two">
+				<div class="content">
+					<!-- <img src="images/learn skills.jpeg" class="Statue-img"> -->
+		            <a href="learn/learn.html" class="info-btn2">LEARN</a>
+				</div>
+			</div>
+            </div>
+            </main>
+        </center>
+</body>
+</html>

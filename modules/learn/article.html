@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Recommendations</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: cornsilk;
+        }
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .book {
+            flex: 0 0 calc(20% - 20px);
+            background-color: #0073e6;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            text-align: center;
+            color: #fff;
+            cursor: pointer;
+            width: 20%;
+            padding: 20px;
+            height: 0;
+            padding-bottom: 15%;
+        }
+        @media(max-width:650px){
+            .row{
+                flex-direction: column;
+            }
+            .book{
+                width: 70%;
+            }
+            h1{
+                font-size: 25px;
+                margin-left: -50px;
+            }
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h2 {
+            text-align: center;
+            font-size: 20px;
+        }
+        .book:hover {
+            background-color: #0254a6;
+        }
+        .subheading {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        h1 {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Expert Articles & e-Books</h1>
+        <div class="row">
+            <div class="book" onclick="window.open('ebooks/Communication-Skills-for-building-Strong-relationships.pdf');">
+                <h2>Building Strong Relationships</h2>
+            </div>
+            <div class="book" onclick="window.open('ebooks/The_confident_speaker_2007_pdf.pdf');">
+                <h2>Confident Public Speaking</h2>
+            </div>
+            <div class="book" onclick="window.open('ebooks/effective-communication.pdf');">
+                <h2>Effective Communication Strategies</h2>
+            </div>
+            <div class="book" onclick="window.open('ebooks/verbal-communication.pdf');">
+                <h2>Verbal Communication Mastery</h2>
+            </div>
+            <div class="book" onclick="window.open('Book3.pdf');">
+                <h2>Mastering Interpersonal Skills</h2>
+            </div>
+            <div class="book" onclick="window.open('Book5.pdf');">
+                <h2>Effective Listening Techniques</h2>
+            </div>
+            <div class="book" onclick="window.open('Book7.pdf');">
+                <h2>Communication Skills for Leaders</h2>
+            </div>
+            <div class="book" onclick="window.open('Book2.pdf');">
+                <h2>The Art of Persuasion</h2>
+            </div>
+            <div class="book" onclick="window.open('Book9.pdf');">
+                <h2>Conflict Resolution Strategies</h2>
+            </div>
+            <div class="book" onclick="window.open('Book10.pdf');">
+                <h2>Effective Email Communication</h2>
+            </div>
+            <div class="book" onclick="window.open('Book11.pdf');">
+                <h2>Business Communication Essentials</h2>
+            </div>
+            <div class="book" onclick="window.open('Book12.pdf');">
+                <h2>Communication Skills for Success</h2>
+            </div>
+            <div class="book" onclick="window.open('Book13.pdf');">
+                <h2>Communication in the Digital Age</h2>
+            </div>
+            <div class="book" onclick="window.open('Book14.pdf');">
+                <h2>Effective Team Communication</h2>
+            </div>
+            <div class="book" onclick="window.open('Book15.pdf');">
+                <h2>Art of Negotiation</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

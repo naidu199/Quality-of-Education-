@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library management system</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+    #background{
+min-height: 1050px;
+width: 100%;
+
+}
+
+#top{
+height: 35px;
+width: 100%;
+background:#2c7ad6;
+line-height: 35px;
+padding: 0px 20px 9px 100px;
+box-sizing: border-box;
+word-spacing:10px ;
+
+}
+#menu{
+height: 65px;
+width: 100%;
+background:white;
+
+}
+#logo{
+height: 65px;
+width: 40%;
+background:white;
+text-align: center;
+line-height: 65px;
+font-size: 40px;
+float: left;
+}
+#menu1{
+
+height: 65px;
+width: 100%;
+background:white;
+float: right;
+
+}
+#menu1 UL{
+list-style: none;
+/* padding-left: 200px; */
+box-sizing: border-box;
+border: 1px solid black;
+padding-left: 24%;
+
+
+
+}
+#menu1 LI{
+height: 45px;
+width: 130px;
+padding-right: 20px;
+text-align: center ;
+display: inline-block;
+line-height: 45px;
+transform: translateY(-5px);
+color: black;
+font-size: 20px;
+
+}
+#menu1 LI:hover{
+background: #2c7ad6;
+
+color: white;
+transition: all ease 1s;
+border-radius: 3px;
+}
+
+#slider{
+/* height:640px; */
+width: 100%;
+/* background:url(images.jpg);
+background-size: cover;
+background-attachment: fixed;
+animation-name:slider;
+animation-duration: 20s;
+animation-iteration-count:infinite ;
+animation-delay: 3s; */
+}
+
+@keyframes slider{
+
+from{
+background:url(image/4.jpg);
+background-size: cover;
+background-attachment: fixed;
+}
+to{
+background:url(image/4.jpg);
+
+background-size: cover;
+background-attachment: fixed;
+}
+}
+
+#student{
+margin:50px 50px;
+color:blue;
+
+}
+#Teacher{
+margin:50px 50px;
+color:white;
+}
+.t{
+height: 40px;
+width: 100%;
+border: 2px solid green;
+border-radius: 4px;
+box-sizing: border-box;
+margin-bottom: 15px;
+
+}
+#down{
+height: 300px;
+width: 100%;
+margin-top: 10px;
+background:#79baec;
+
+text-align: center;
+padding-top: 10px;
+color: white;
+}
+.footer{
+height: 20px;
+width: 100%;
+background: black;
+color: white;
+text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: auto;
+}
+
+.module {
+    border: 1px solid #ccc;
+    padding: 50px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+    transition: background-color 0.3s ease;
+    margin: 5%;
+}
+
+.module:hover {
+    background-color: #a0d6b4;
+    color: #fff;
+    transition: all ease 1s;
+}
+
+.quizzes {
+    background-color: #728fce;
+    border-color: #728fce;
+
+}
+
+.text {
+    text-align: center;
+    font-size: xx-large;
+    display: flex;
+    flex-direction: row;
+}
+@media(max-width:650px){
+    main{
+        flex-direction: column;
+    }
+    .quizzes{
+        width: 40%;
+        margin-left: -3px;
+    }
+    .quizzes a{
+        margin-left: -30px;
+    }
+    #top{
+        width: 70%;
+    }
+    #down{
+        width: 70%;
+        height: 140px;
+    }
+    #logo{
+        font-size: 20px;
+    }
+    #menu1{
+        display: none;
+    }
+    .footer{
+        width: 70%;
+    }
+
+
+
+}
+</style>
+</head>
+<body>
+<div id="background">
+<div id="top">
+
+<a href="#" class="fa fa-facebook"; style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+<a href="#" class="fa fa-instagram" style="text-decoration:none; padding:7px; float:right; color: white;"></a>
+<a href="#" class="fa fa-twitter" style="text-decoration:none; padding:7px ; float:right; color: white;"></a>
+
+</div>
+<div id="menu">
+<div id="logo">LIBRARY<b style="color:#2c7ad6 ;">ZONE</b>
+</div>
+
+</div>
+<div id="menu1">
+    <ul>
+    <a href="#"><li class="fa fa-home">Home</li></a>
+    <a href="#"><li class="fa fa-bell"></li></a>
+    <a href="#"><li class="fa fa-user-edit">Edit Profile</li></a>
+
+    </ul>
+    </div>
+<div id="slider" class="details">
+
+
+</div>
+<div id="down">
+
+</div>
+<main>
+    <section class="text module quizzes">
+        <a href="assignments.html" style="text-decoration: none; ">ASSIGNMENTS</a>
+    </section>
+
+    <section class="text module quizzes">
+        <a href="results.html" style="text-decoration: none;">VIEW RESULTS</a>
+    </section>
+
+    <section class="text module quizzes">
+        <a href="live_classes.html" style="text-decoration: none;">LIVE CLASSES</a>
+    </section>
+</main>
+<div class="footer"></div>
+</div>
+</body>
+</html>

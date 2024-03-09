@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pronunciation Assessment Tool</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #CEE6F2 /*#FBEAE7*/ ;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        select, button {
+            display: block;
+            margin: 10px auto;
+        }
+
+        textarea {
+            width: 100%;
+            height: 150px;
+            resize: none;
+            margin-bottom: 10px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #result {
+            text-align: center;
+        }
+        #startButton:hover{
+	        transform: scale(1.1);
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Pronunciation Assessment Tool</h1>
+        <textarea id="inputParagraph" >A car has become an essential part of modern life for many people. It provides a convenient and flexible way to travel and can be used for a variety of purposes, such as commuting to work, running errands, and taking road trips.</textarea>
+        <p>Select a language:</p>
+        <select id="languageSelect">
+            <option value="en-US">English (US)</option>
+            <option value="te-IN">Telugu (IN)</option>
+            <option value="hi-IN">Hindi (IN)</option>
+            <option value="Ma-IN">Malayalam (IN)</option>
+        </select>
+        <button id="startButton" style="background-color: rgb(242, 52, 52); border: none; border-radius: 100%; padding: 10px;">
+            <i class="fas fa-microphone" style="color: white; font-size: 24px; text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;"></i>
+        </button>
+
+
+        <p id="status"></p>
+        <div id="result" class="hidden">
+            <h2>Analysis Result:</h2>
+            <p id="pronunciation"></p>
+            <a id="improvementLink" onclick="window.open('learn/learn.html');" style="display: none;">Click here to improve Communication Skills</a>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const recognizer = new webkitSpeechRecognition() || new SpeechRecognition();
+            recognizer.continuous = false;
+            recognizer.lang = 'en-US';
+
+            const inputParagraph = document.getElementById('inputParagraph');
+            const languageSelect = document.getElementById('languageSelect');
+            const startButton = document.getElementById('startButton');
+            const status = document.getElementById('status');
+            const resultDiv = document.getElementById('result');
+            const pronunciation = document.getElementById('pronunciation');
+            const improvementLink = document.getElementById('improvementLink'); //link element
+
+            const hindiParagraph = "एक कार कई लोगों के लिए आधुनिक जीवन का एक अनिवार्य हिस्सा बन गई है। यह यात्रा करने के लिए एक सुविधाजनक और लचीला तरीका प्रदान करता है और इसका उपयोग विभिन्न उद्देश्यों के लिए किया जा सकता है, जैसे कि काम पर आना-जाना, काम चलाना और सड़क यात्राएं करना।";
+
+            const teluguParagraph = "కారు అనేది చాలా మందికి ఆధునిక జీవితంలో ఒక ముఖ్యమైన భాగంగా మారింది. ఇది ప్రయాణానికి సౌకర్యవంతమైన మరియు సరళమైన మార్గాన్ని అందిస్తుంది మరియు పనికి ప్రయాణించడం, పనులను నడపడం మరియు రోడ్డు ప్రయాణాలు చేయడం వంటి వివిధ ప్రయోజనాల కోసం ఉపయోగించవచ్చు.";
+
+            const MalayalamParagraph = "ഒരു കാർ ആധുനിക ജീവിതത്തിന്റെ അവിഭാജ്യ ഘടകമായി മാറിയിരിക്കുന്നു. ഇത് യാത്ര ചെയ്യുന്നതിനുള്ള സൗകര്യപ്രദവും വഴക്കമുള്ളതുമായ മാർഗം നൽകുന്നു, കൂടാതെ ജോലിയിലേക്കുള്ള യാത്ര, ജോലികൾ ചെയ്യുക, റോഡ് യാത്രകൾ നടത്തുക തുടങ്ങിയ വിവിധ ആവശ്യങ്ങൾക്കായി ഇത് ഉപയോഗിക്കാം.";
+
+            startButton.addEventListener('click', function () {
+                const selectedLanguage = languageSelect.value;
+                recognizer.lang = selectedLanguage;
+                recognizer.start();
+                status.textContent = `Listening in ${selectedLanguage}...`;
+                startButton.disabled = true;
+            });
+
+            languageSelect.addEventListener('change', function () {
+                const selectedLanguage = languageSelect.value;
+                if (selectedLanguage === 'hi-IN') {
+                    inputParagraph.value = hindiParagraph;
+                } else if (selectedLanguage === 'te-IN') {
+                    inputParagraph.value = teluguParagraph;
+                } else if (selectedLanguage === 'Ma-IN') {
+                    inputParagraph.value = MalayalamParagraph;
+                } else {
+                    inputParagraph.value = "A car has become an essential part of modern life for many people. It provides a convenient and flexible way to travel and can be used for a variety of purposes, such as commuting to work, running errands, and taking road trips.";
+                }
+            });
+
+            recognizer.onresult = function (event) {
+                const transcript = event.results[0][0].transcript;
+                status.textContent = 'Speech recognition complete.';
+                resultDiv.classList.remove('hidden');
+
+                const originalParagraph = inputParagraph.value;
+
+                const similarity = calculateSimilarity(originalParagraph, transcript);
+
+                if (similarity >= 0.7) {
+                    pronunciation.textContent = `Excellent Pronunciation! Similarity: ${similarity}`;
+                    improvementLink.style.display = 'none';
+                } else if (similarity >= 0.5) {
+                    pronunciation.textContent = `Good Pronunciation. Similarity: ${similarity}`;
+                    improvementLink.style.display = 'none';
+                } else {
+                    pronunciation.textContent = `Needs Improvement. Similarity: ${similarity}`;
+                    improvementLink.style.display = 'block';
+                    //Link
+                    improvementLink.href = '#';
+                }
+            };
+
+            recognizer.onerror = function (event) {
+                status.textContent = 'Speech recognition error.';
+            };
+
+            recognizer.onend = function () {
+                startButton.disabled = false;
+                status.textContent = '';
+            };
+
+            function calculateSimilarity(str1, str2) {
+                const cleanStr1 = str1.toLowerCase().replace(/[^a-z0-9]+/g, '');
+                const cleanStr2 = str2.toLowerCase().replace(/[^a-z0-9]+/g, '');
+
+                if (cleanStr1 === cleanStr2) {
+                    return 1.0;
+                }
+
+                const maxLength = Math.max(cleanStr1.length, cleanStr2.length);
+                const editDistance = calculateEditDistance(cleanStr1, cleanStr2);
+
+                return 1 - editDistance / maxLength;
+            }
+
+            function calculateEditDistance(str1, str2) {
+                const m = str1.length;
+                const n = str2.length;
+                const dp = new Array(m + 1).fill().map(() => new Array(n + 1).fill(0));
+
+                for (let i = 0; i <= m; i++) {
+                    for (let j = 0; j <= n; j++) {
+                        if (i === 0) {
+                            dp[i][j] = j;
+                        } else if (j === 0) {
+                            dp[i][j] = i;
+                        } else if (str1[i - 1] === str2[j - 1]) {
+                            dp[i][j] = dp[i - 1][j - 1];
+                        } else {
+                            dp[i][j] = 1 + Math.min(dp[i - 1][j], dp[i][j - 1], dp[i - 1][j - 1]);
+                        }
+                    }
+                }
+
+                return dp[m][n];
+            }
+        });
+    </script>
+</body>
+</html>

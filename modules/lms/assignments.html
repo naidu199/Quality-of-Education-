@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mentors Assignment Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cfecec;
+        }
+
+        .container {
+            background-color: #95b9c7;
+            padding: 20px;
+            margin: 20px auto;
+            width: 70%;
+            border: 1px solid #436b78;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 20px;
+        }
+
+        form {
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            margin: 0; /* Remove default paragraph margins */
+        }
+
+        .question {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .options label {
+            display: block;
+            margin-left: 20px;
+        }
+        .add-question {
+            margin-top: 20px;
+            cursor: pointer;
+            color: #007BFF;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Assignments</h1>
+        <!-- Add Assignment Section -->
+        <h2>Add Assignment:</h2>
+        <form id="add-assignment-form">
+            <label for="assignment-name">Assignment Name:</label>
+            <input type="text" id="assignment-name" required><br>
+            <label for="assignment-question">Assignment Question:</label>
+            <input type="text" id="assignment-question" required>
+            <button type="submit">Add Assignment</button>
+        </form>
+
+        <!-- Upload Assignment Section -->
+        <h2>Upload Assignment:</h2>
+        <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="assignment">Select Assignment:</label><br>
+            <input type="file" name="assignment" id="assignment" accept=".pdf, .doc, .docx"><br>
+            <input type="submit" value="Upload">
+        </form>
+            <h1>Upload a quiz</h1>
+
+            <!-- Add Question Form -->
+            <form id="question-form">
+                <div class="question">
+                    <label for="question-text">Enter your question:</label>
+                    <input type="text" id="question-text" name="question-text" required>
+                </div>
+                <div class="options">
+                    <label for="option-a">
+                        <input type="radio" name="options" id="option-a"> A.
+                        <input type="text" id="answer-a" name="answer-a" required>
+                    </label>
+                    <label for="option-b">
+                        <input type="radio" name="options" id="option-b"> B.
+                        <input type="text" id="answer-b" name="answer-b" required>
+                    </label>
+                    <label for="option-c">
+                        <input type="radio" name="options" id="option-c"> C.
+                        <input type="text" id="answer-c" name="answer-c" required>
+                    </label>
+                    <label for="option-d">
+                        <input type="radio" name="options" id="option-d"> D.
+                        <input type="text" id="answer-d" name="answer-d" required>
+                    </label>
+                </div>
+                <button type="submit" style="margin: 5px;">Add Question</button>
+            </form>
+
+            <!-- Added Questions -->
+            <div class="added-questions"></div>
+
+            <!-- Upload Quiz Button -->
+            <button id="upload-quiz">Upload Quiz</button>
+
+    </div>
+
+    <script>
+        const questionForm = document.getElementById('question-form');
+        const addedQuestions = document.querySelector('.added-questions');
+        const uploadButton = document.getElementById('upload-quiz');
+
+        questionForm.addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Get user-entered question and answers
+            const questionText = document.getElementById('question-text').value;
+            const answerA = document.getElementById('answer-a').value;
+            const answerB = document.getElementById('answer-b').value;
+            const answerC = document.getElementById('answer-c').value;
+            const answerD = document.getElementById('answer-d').value;
+
+            // Create a new question and add it to the quiz layout
+            const newQuestion = document.createElement('div');
+            newQuestion.innerHTML = `
+                <div class="question">
+                    <p>${questionText}</p>
+                </div>
+                <div class="options">
+                    <label>
+                        <input type="radio" name="q${addedQuestions.childElementCount}" value="a"> A. ${answerA}
+                    </label>
+                    <label>
+                        <input type="radio" name="q${addedQuestions.childElementCount}" value="b"> B. ${answerB}
+                    </label>
+                    <label>
+                        <input type="radio" name="q${addedQuestions.childElementCount}" value="c"> C. ${answerC}
+                    </label>
+                    <label>
+                        <input type="radio" name="q${addedQuestions.childElementCount}" value="d"> D. ${answerD}
+                    </label>
+                </div>
+            `;
+
+            addedQuestions.appendChild(newQuestion);
+
+            // Clear the input fields
+            questionText.value = '';
+            answerA.value = '';
+            answerB.value = '';
+            answerC.value = '';
+            answerD.value = '';
+        });
+
+        // Add functionality to the "Upload Quiz" button (you can customize this)
+        uploadButton.addEventListener('click', () => {
+            const quizData = {
+                questions: [],
+            };
+
+            // Collect all added questions and options
+            const addedQuestionElements = document.querySelectorAll('.added-questions .question');
+
+            addedQuestionElements.forEach((questionElement, index) => {
+                const questionText = questionElement.querySelector('p').textContent;
+                const options = questionElement.querySelectorAll('input[type="radio"]');
+                const answers = [];
+
+                options.forEach((option, optionIndex) => {
+                    answers.push({
+                        option: String.fromCharCode(65 + optionIndex), // A, B, C, D, ...
+                        text: option.parentElement.textContent.trim().slice(2), // Remove the leading "A. ", "B. ", ...
+                    });
+                });
+
+                quizData.questions.push({
+                    question: questionText,
+                    answers: answers,
+                });
+            });
+
+            // You can now upload quizData to your server or process it as needed.
+            console.log(quizData);
+        });
+    </script>
+</body>
+</html>

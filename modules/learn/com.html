@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Communication Skills Development</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        .container {
+            max-width: 80%;
+            margin: 20px auto;
+            padding: 40px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            height: auto;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .module {
+            flex: 0 0 calc(25% - 20px);
+            background-color: #f0f0f0;
+            padding: 30px;
+            box-sizing: border-box;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+            background-color: #2c85de;
+            /* display: flex; */
+            flex-direction: row;
+        }
+        @media(max-width:650px){
+            .row{
+                flex-direction: column;
+                width: 100%;
+                margin: 10px;
+                margin-left: -5px;
+            }
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        h2{
+            color: #fff;
+            text-align: center;
+        }
+        .module:hover {
+            background-color: #0381fe;
+            cursor: pointer;
+        }
+        p{
+            text-align: center;
+        }
+        .subheading {
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="module" onclick="window.open('effective verbal communication.pdf');">
+                <h2>Effective Verbal Communication</h2>
+                <div class="subheading">Enhancing Your Spoken Words</div>
+                <p>Refine your verbal communication skills to convey your ideas confidently and persuasively, making a lasting impact on your audience.</p>
+            </div>
+            <div class="module" onclick="window.open('non-verbal-communication.pdf');">
+                <!-- <h2>Confident Public Speaking</h2>
+                <div class="subheading">Overcoming Stage Fright</div>
+                <p>Build your confidence in public speaking by conquering stage fright and delivering compelling speeches.</p> -->
+                <h2>Non-Verbal Communication</h2>
+                <div class="subheading">The Power of Body Language</div>
+                <p>Understand the significance of non-verbal communication, including body language and facial expressions, in effective communication.</p>
+            </div>
+            <div class="module" onclick="window.open('inter-personal.pdf');">
+                <h2>Interpersonal Communication</h2>
+                <div class="subheading">Building Strong Relationships</div>
+                <p>Develop meaningful relationships by mastering the art of interpersonal communication and building trust with others.</p>
+            </div>
+            <div class="module" onclick="window.open('Presentation_Skills.pdf');">
+                <h2>Productive Presentation Skills</h2>
+                <div class="subheading">Engaging Your Audience</div>
+                <p>Create engaging presentations and captivate your audience with effective presentation techniques and storytelling.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="module" onclick="window.open('conflict-resolution.pdf');">
+                <h2>Conflict Resolution</h2>
+                <div class="subheading">Resolving Differences Peacefully</div>
+                <p>Learn how to resolve conflicts peacefully and improve relationships by using effective conflict resolution strategies.</p>
+            </div>
+            <div class="module" onclick="window.open('confident public speaking.pdf');">
+                <!-- <h2>Non-Verbal Communication</h2>
+                <div class="subheading">The Power of Body Language</div>
+                <p>Understand the significance of non-verbal communication, including body language and facial expressions, in effective communication.</p> -->
+                <h2>Confident Public Speaking</h2>
+                <div class="subheading">Overcoming Stage Fright</div>
+                <p>Build your confidence in public speaking by conquering stage fright and delivering compelling speeches.</p>
+            </div>
+            <div class="module" onclick="window.open('BUSINESS_COMMUNICATION.pdf');">
+                <h2>Business Communication</h2>
+                <div class="subheading">Crafting Professional Emails</div>
+                <p>Master the art of business communication by crafting professional emails and written correspondence for effective workplace communication.</p>
+            </div>
+            <div class="module" onclick="window.open('Effective Negotiation.pdf');">
+                <h2>Effective Negotiation</h2>
+                <div class="subheading">Win-Win Negotiation Strategies</div>
+                <p>Improve your negotiation skills by adopting win-win negotiation strategies that benefit all parties involved.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="module" onclick="window.open('leadership-communication.pdf');">
+                <h2>Leadership Communication</h2>
+                <div class="subheading">Inspirational Leadership</div>
+                <p>Explore the role of communication in inspirational leadership and how effective communication can drive team success.</p>
+            </div>
+            <div class="module" onclick="window.open('Conflict Management.pdf');">
+                <h2>Conflict Management</h2>
+                <div class="subheading">Dealing with Workplace Conflict</div>
+                <p>Discover effective conflict management techniques for handling workplace conflicts and maintaining a harmonious work environment.</p>
+            </div>
+            <div class="module" onclick="window.open('Assertive_Communication_Skills.pdf');">
+                <h2>Assertive Communication</h2>
+                <div class="subheading">Expressing Yourself Confidently</div>
+                <p>Learn the art of assertive communication to express your thoughts and needs confidently while respecting others.</p>
+            </div>
+            <div class="module" onclick="window.open('Communication in Relationships.pdf');">
+                <h2>Communication in Relationships</h2>
+                <div class="subheading">Building Stronger Bonds</div>
+                <p>Strengthen your personal relationships by improving communication and understanding the needs of your loved ones.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

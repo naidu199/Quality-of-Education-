@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>study material</title>
+	<!-- <style>
+	table{
+		height: 60px;
+	}
+
+	</style> -->
+	<style>
+		body
+		{
+			font-family: "Open Sans",sans-serif;
+      padding-top: 10px;
+		}
+		h1, h2, h3, h4, h5, h6 {
+			color: #666;
+			font-family: "Open Sans",sans-serif;
+			font-weight: 700;
+			text-shadow: 0 0 1px rgba(0, 0, 0, 0.01);
+		}
+		table#select_clr td select
+		{
+			background:#fff;
+			border:1px solid #fff;
+			border-radius:0px;
+			color:#6B2F03;
+			height: 35px;
+			font-size: 20px;
+		}
+		table#select_clr td input[type=button]
+		{
+			border-radius:0px;
+			background:#666464;
+			color:#fff;
+			border:0px solid #fff;
+			font-weight:bold;
+			height: 35px;
+			font-size: 20px;
+		}
+		table#select_clr td input[type=button]:hover
+		{
+			opacity:0.8;
+			background: black;
+		}
+
+		</style>
+  <link rel="stylesheet" href="bar.css">
+  <link rel="icon" href="images/logo.png">
+</head>
+<body>
+  <!-- <div class="bar">
+  <div class="logoname">EDU BRIDGE</div>
+		<div  class="home" style=" width: 151px; height: 40px; left: 1020px; top: 30px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word "><a href="index.html">Home</a></div>
+		<div style="width: 151px; height: 40px; left: 1171px; top: 30px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word"><a href="#about">About</a></div>
+		<div style="width: 151px; height: 40px; left: 1322px; top: 30px; position: absolute; color: black; font-size: 30px; font-family: Inter; font-weight: 400; word-wrap: break-word"><a href="">Help</a></div>
+    <img class="logo" src="images/logo.png">
+  </div> -->
+
+<table align="center" width="100%" height="40" cellpadding="0" cellspacing="0">
+	<tr>
+		<td>
+
+   <script type="text/javascript">
+
+
+
+  function change()
+  {
+
+  document.test.tsubject.options[0].text="..Select Subject......";
+  document.test.tsubject.options[1].text="";
+  document.test.tsubject.options[2].text="";
+  document.test.tsubject.options[3].text="";
+  document.test.tsubject.options[4].text="";
+  document.test.tsubject.options[5].text="";
+  document.test.tsubject.options[6].text="";
+  document.test.tsubject.options[7].text="";
+  document.test.tsubject.options[8].text="";
+  document.test.tsubject.options[9].text="";
+  document.test.tsubject.options[10].text="";
+  document.test.tsubject.options[11].text="";
+  document.test.tsubject.options[12].text="";
+  document.test.tsubject.options[13].text="";
+  document.test.tsubject.options[14].text="";
+  document.test.tsubject.options[15].text="";
+  document.test.tsubject.options[16].text="";
+  document.test.tsubject.options[17].text="";
+  document.test.tsubject.options[18].text="";
+  document.test.tsubject.options[19].text="";
+  document.test.tsubject.options[20].text="";
+
+
+  //this function check the classthat you have selected
+
+  if (document.test.tclass.value==-1)
+  {
+  document.test.tsubject.options[0].text=".....Select Subject.....";
+  document.test.tsubject.options[1].text="";
+  document.test.tsubject.options[2].text="";
+
+  }
+  else if (document.test.tclass.value==1)// this condition checks which class u have select and you can add subject according to class 1
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="English";
+  document.test.tsubject.options[2].text="Mathematics";
+  document.test.tsubject.options[3].text="Hindi";
+  document.test.tsubject.options[4].text="Urdu";
+  }
+
+
+  else if (document.test.tclass.value==2)// this condition checks which class u have select and you can add subject according to class 2
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Mathematics";
+  document.test.tsubject.options[2].text="Hindi";
+  document.test.tsubject.options[3].text="English"
+  document.test.tsubject.options[4].text="Urdu";
+  }
+
+  else if (document.test.tclass.value==3)// this condition checks which class u have select and you can add subject according to class 3
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Environmental Studies";
+  document.test.tsubject.options[2].text="Hindi";
+  document.test.tsubject.options[3].text="English";
+  document.test.tsubject.options[4].text="Mathematics";
+  document.test.tsubject.options[5].text="Urdu";
+  //document.test.tsubject.options[6].text="";
+
+  }
+
+
+  else if (document.test.tclass.value==4)// this condition checks which class u have select and you can add subject according to class 4
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Mathematics";
+  document.test.tsubject.options[2].text="Hindi";
+  document.test.tsubject.options[3].text="Environmental Studies"
+  document.test.tsubject.options[4].text="English"
+  document.test.tsubject.options[5].text="Urdu"
+
+
+  }
+
+  else if (document.test.tclass.value==5)// this condition checks which class u have select and you can add subject according to class 5
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Mathematics";
+  document.test.tsubject.options[2].text="Hindi";
+  document.test.tsubject.options[3].text="English";
+  document.test.tsubject.options[4].text="Environmental Studies";
+  document.test.tsubject.options[5].text="Urdu";
+  //document.test.tsubject.options[6].text="";
+
+  }
+  else if (document.test.tclass.value==6)// this condition checks which class u have select and you can add subject according to class  6
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Hindi";
+  document.test.tsubject.options[2].text="English";
+  document.test.tsubject.options[3].text="Mathematics";
+  document.test.tsubject.options[4].text="Social Studies";
+  document.test.tsubject.options[5].text="Sanskrit";
+  document.test.tsubject.options[6].text="Science";
+  document.test.tsubject.options[7].text="Urdu";
+  document.test.tsubject.options[8].text="Yoga";
+  //document.test.tsubject.options[8].text="Environmental Education";
+  //document.test.tsubject.options[9].text="";
+
+  }
+
+  else if (document.test.tclass.value==7)// this condition checks which class u have select and you can add subject according to class 7
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Mathematics";
+  document.test.tsubject.options[2].text="Science";
+  document.test.tsubject.options[3].text="English"
+  document.test.tsubject.options[4].text="Sanskrit"
+  document.test.tsubject.options[5].text="Social Science"
+  document.test.tsubject.options[6].text="Hindi"
+  document.test.tsubject.options[7].text="Urdu"
+  document.test.tsubject.options[8].text="Yoga";
+  //document.test.tsubject.options[8].text="Environmental Education"
+  }
+  else if (document.test.tclass.value==8)// this condition checks which class u have select and you can add subject according to class 8
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="English";
+  document.test.tsubject.options[2].text="Mathematics";
+  document.test.tsubject.options[3].text="Hindi";
+  document.test.tsubject.options[4].text="Science";
+  document.test.tsubject.options[5].text="Social Science";
+  document.test.tsubject.options[6].text="Sanskrit";
+  document.test.tsubject.options[7].text="Urdu";
+  document.test.tsubject.options[8].text="Yoga";
+  //document.test.tsubject.options[7].text="Environmental Education";
+  //document.test.tsubject.options[8].text="";
+  //document.test.tsubject.options[9].text="";
+
+  }
+  else if (document.test.tclass.value==9)// this condition checks which class u have select and you can add subject according to class 9
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="English";
+  document.test.tsubject.options[2].text="Hindi";
+  document.test.tsubject.options[3].text="Sanskrit";
+  document.test.tsubject.options[4].text="Mathematics";
+  document.test.tsubject.options[5].text="Science";
+  document.test.tsubject.options[6].text="Social Science";
+  document.test.tsubject.options[7].text="Yoga";
+  document.test.tsubject.options[8].text="Urdu";
+  document.test.tsubject.options[9].text="Vocational";
+  document.test.tsubject.options[10].text="ICT";
+  document.test.tsubject.options[11].text="Health and Physical Education"
+
+  //document.test.tsubject.options[7].text="Health and Physical Education";
+  //document.test.tsubject.options[8].text="Environmental Education";
+  //document.test.tsubject.options[9].text="";
+
+  }
+  else if (document.test.tclass.value==10)// this condition checks which class u have select and you can add subject according to class 10
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Mathematics";
+  document.test.tsubject.options[2].text="Science";
+  document.test.tsubject.options[3].text="Hindi";
+  document.test.tsubject.options[4].text="Social Science";
+  document.test.tsubject.options[5].text="English";
+  document.test.tsubject.options[6].text="Sanskrit";
+  document.test.tsubject.options[7].text="Urdu";
+  document.test.tsubject.options[8].text="Yoga";
+  document.test.tsubject.options[9].text="Health and Physical Education";
+  //document.test.tsubject.options[10].text="Environmental Education";
+
+  }
+
+
+  else if (document.test.tclass.value==11)// this condition checks which class u have select and you can add subject according to class 11
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Sanskrit";
+  document.test.tsubject.options[2].text="Accountancy";
+  document.test.tsubject.options[3].text="Chemistry";
+  document.test.tsubject.options[4].text="Mathematics";
+  //document.test.tsubject.options[5].text="Statistics";
+  document.test.tsubject.options[5].text="Biology";
+  document.test.tsubject.options[6].text="Psychology";
+  document.test.tsubject.options[7].text="Geography";
+  document.test.tsubject.options[8].text="Physics";
+  document.test.tsubject.options[9].text="Hindi";
+  document.test.tsubject.options[10].text="Sociology";
+  document.test.tsubject.options[11].text="English";
+  document.test.tsubject.options[12].text="Political Science";
+  document.test.tsubject.options[13].text="History";
+  document.test.tsubject.options[14].text="Economics";
+  document.test.tsubject.options[15].text="Business Studies";
+  document.test.tsubject.options[16].text="Urdu";
+  //document.test.tsubject.options[17].text="Heritage Crafts";
+  //document.test.tsubject.options[18].text="Graphics design";
+  document.test.tsubject.options[17].text="Computers and Communication Technology";
+  document.test.tsubject.options[18].text="Computer Science";
+  document.test.tsubject.options[19].text="Informatics Practice";
+  document.test.tsubject.options[20].text="Fine Art";
+  document.test.tsubject.options[21].text="Biotechnology";
+  document.test.tsubject.options[22].text="Home Science";
+  document.test.tsubject.options[23].text="Creative Writing and Translation";
+  document.test.tsubject.options[24].text="Sangeet";
+  document.test.tsubject.options[25].text="Health and Physical Education";
+  document.test.tsubject.options[26].text="Knowledge Traditions Practices of India";
+
+
+  }
+  else if (document.test.tclass.value==12)// this condition checks which class u have select and you can add subject according to class 12
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Mathematics";
+  document.test.tsubject.options[2].text="Physics";
+  document.test.tsubject.options[3].text="Accountancy"
+  document.test.tsubject.options[4].text="Sanskrit"
+  document.test.tsubject.options[5].text="Hindi"
+  document.test.tsubject.options[6].text="English"
+  document.test.tsubject.options[7].text="Biology"
+  document.test.tsubject.options[8].text="History"
+  document.test.tsubject.options[9].text="Geography"
+  document.test.tsubject.options[10].text="Psychology"
+  document.test.tsubject.options[11].text="Sociology"
+  document.test.tsubject.options[12].text="Chemistry";
+  document.test.tsubject.options[13].text="Political Science";
+  document.test.tsubject.options[14].text="Economics";
+  document.test.tsubject.options[15].text="Business Studies";
+  //document.test.tsubject.options[16].text="Heritage Crafts";
+  //document.test.tsubject.options[17].text="New Age Graphics Design";
+  document.test.tsubject.options[16].text="Urdu";
+  document.test.tsubject.options[17].text="Creative Writing & Translation";
+  document.test.tsubject.options[18].text="Home Science";
+  document.test.tsubject.options[19].text="Fine Art";
+  document.test.tsubject.options[20].text="Computer Science";
+  document.test.tsubject.options[21].text="Informatics Practices";
+
+  }
+  else if (document.test.tclass.value==13)// this condition checks which class u have select and you can add subject according to class
+  {
+  document.test.tsubject.options[0].text="..Select Subject..";
+  document.test.tsubject.options[1].text="Hindi";
+  document.test.tsubject.options[2].text="Sanskrit";
+  //document.test.tsubject.options[3].text="Heritage Crafts";
+  document.test.tsubject.options[3].text="Urdu";
+
+  }
+
+  }
+  function change1(sind)
+  {
+
+  // this function checks which class and subject u have selected
+  // and set the value of book accordingly and the name of file that will be open after button clicked
+
+  {
+
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="";
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[3].text="";
+  document.test.tbook.options[4].text="";
+  document.test.tbook.options[5].text="";
+  document.test.tbook.options[6].text="";
+  document.test.tbook.options[7].text="";
+  document.test.tbook.options[8].text="";
+  document.test.tbook.options[9].text="";
+  document.test.tbook.options[10].text="";
+  document.test.tbook.options[11].text="";
+  document.test.tbook.options[12].text="";
+
+
+
+  // this function checks which class and subject u have selected
+  // and set the value of book accordingly and the name of file that will be open after button clicked
+
+  if((document.test.tclass.value==1) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mridang";
+  document.test.tbook.options[1].value="flipbook.htm?aemr1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==1) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Joyful-Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?aejm1=1-1"
+  document.test.tbook.options[2].text="Anadmay-Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?ahjm1=1-1"
+
+
+
+  }
+  else if((document.test.tclass.value==1) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Sarangi";
+  document.test.tbook.options[1].value="flipbook.htm?ahsr1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==1) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Shahnai";
+  document.test.tbook.options[1].value="flipbook.htm?aush1=1-1"
+
+  }
+
+
+  else if((document.test.tclass.value==2) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Joyful-Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?bejm1=1-1"
+  document.test.tbook.options[2].text="Anadmay-Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?bhjm1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==2) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Sarangi";
+  document.test.tbook.options[1].value="flipbook.htm?bhsr1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==2) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mridang";
+  document.test.tbook.options[1].value="flipbook.htm?bemr1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==2) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Shahnai";
+  document.test.tbook.options[1].value="flipbook.htm?bush1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==3) && (document.test.tsubject.options[sind].text=="Environmental Studies"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Looking Around";
+  document.test.tbook.options[1].value="flipbook.htm?ceap1=1-1"
+  document.test.tbook.options[2].text="Aas-Paas";
+  document.test.tbook.options[2].value="flipbook.htm?chap1=1-1"
+  document.test.tbook.options[3].text="Aas Pass (Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?cuap1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==3) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Rimjhim";
+  document.test.tbook.options[1].value="flipbook.htm?chhn1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==3) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Marigold";
+  document.test.tbook.options[1].value="flipbook.htm?ceen1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==3) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?cemh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?chmh1=1-1"
+  //document.test.tbook.options[3].text="Riyazi Ka Jadoo-III(Urdu)";
+  //document.test.tbook.options[3].value="flipbook.htm?curi1=1-14"
+
+  }
+  else if((document.test.tclass.value==3) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ibtedai Urdu";
+  document.test.tbook.options[1].value="flipbook.htm?culb1=1-1"
+  document.test.tbook.options[2].text="Riyazi-III";
+  document.test.tbook.options[2].value="flipbook.htm?curi1=1-14"
+  document.test.tbook.options[3].text="Aas Pass (Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?cuap1=1-24"
+
+  }
+
+
+
+
+  else if((document.test.tclass.value==4) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Math-Magic";
+  document.test.tbook.options[1].value="flipbook.htm?demh1=1-1"
+  document.test.tbook.options[2].text="Ganit Ka Jadu";
+  document.test.tbook.options[2].value="flipbook.htm?dhmh1=1-1"
+  document.test.tbook.options[3].text="Riyazi Ka Jadu(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?duri1=1-1"
+
+  }
+  else if((document.test.tclass.value==4) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Rimjhim";
+  document.test.tbook.options[1].value="flipbook.htm?dhhn1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==4) && (document.test.tsubject.options[sind].text=="Environmental Studies"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Looking Around(EVS)";
+  document.test.tbook.options[1].value="flipbook.htm?deap1=1-1"
+  document.test.tbook.options[2].text="Aas Paas";
+  document.test.tbook.options[2].value="flipbook.htm?dhap1=1-1"
+  document.test.tbook.options[3].text="Aas-Paas(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?duap1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==4) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Marigold";
+  document.test.tbook.options[1].value="flipbook.htm?deen1=1-1"
+
+  }
+  else if((document.test.tclass.value==4) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ibtedai Urdu-IV";
+  document.test.tbook.options[1].value="flipbook.htm?dulb1=1-1"
+  //<!--document.test.tbook.options[2].text="Riyazi Ka Jadu";
+  //document.test.tbook.options[2].value="flipbook.htm?duri1=1-14"-->
+  //<!--document.test.tbook.options[3].text="Aas-Paas Urdu";
+  //document.test.tbook.options[3].value="flipbook.htm?duap1=1-27"-->
+
+  }
+
+
+
+  else if((document.test.tclass.value==5) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Math-Magic";
+  document.test.tbook.options[1].value="flipbook.htm?eemh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?ehmh1=1-1"
+  document.test.tbook.options[3].text="Riyazi Ka Jadoo(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?euma1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==5) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Rimjhim";
+  document.test.tbook.options[1].value="flipbook.htm?ehhn1=1-1"
+
+  }
+
+
+  else if((document.test.tclass.value==5) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Marigold";
+  document.test.tbook.options[1].value="flipbook.htm?eeen1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==5) && (document.test.tsubject.options[sind].text=="Environmental Studies"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Aas-Pass";
+  document.test.tbook.options[1].value="flipbook.htm?ehap1=1-1"
+  document.test.tbook.options[2].text="Looking Around";
+  document.test.tbook.options[2].value="flipbook.htm?eeap1=1-1"
+  document.test.tbook.options[3].text="Ass Pass(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?euev1=1-22"
+
+  }
+  else if((document.test.tclass.value==5) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ibtedai Urdu Class-V";
+  document.test.tbook.options[1].value="flipbook.htm?eulb1=1-1"
+  //document.test.tbook.options[2].text="math-magic-V";
+  //document.test.tbook.options[2].value="flipbook.htm?euma1=1-14"
+  //document.test.tbook.options[3].text="EVS-V (Urdu)";
+  //document.test.tbook.options[3].value="flipbook.htm?euev1=1-22"
+
+  }
+
+
+
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Vasant";
+  document.test.tbook.options[1].value="flipbook.htm?fhvs1=1-1"
+  document.test.tbook.options[2].text="Durva";
+  document.test.tbook.options[2].value="flipbook.htm?fhdv1=1-1"
+  document.test.tbook.options[3].text="Bal Ram Katha";
+  document.test.tbook.options[3].value="flipbook.htm?fhbr1=1-1"
+
+  }
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Honeysuckle";
+  document.test.tbook.options[1].value="flipbook.htm?fehl1=1-1"
+  document.test.tbook.options[2].text="A Pact With The Sun";
+  document.test.tbook.options[2].value="flipbook.htm?fepw1=1-1"
+
+  }
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?femh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?fhmh1=1-1"
+  document.test.tbook.options[3].text="Hisab(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?furi1=1-1"
+  //document.test.tbook.options[4].text="Exemplar Problem(English)";
+  //document.test.tbook.options[4].value="flipbook.htm?feep1=1-9"
+  //document.test.tbook.options[5].text="Exemplar Problem(Hindi)";
+  //document.test.tbook.options[5].value="flipbook.htm?fhep1=1-9"
+
+
+  }
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Social Studies"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="History - Our Past";
+  document.test.tbook.options[1].value="flipbook.htm?fess1=1-1"
+  document.test.tbook.options[2].text="The Earth Our Habitat";
+  document.test.tbook.options[2].value="flipbook.htm?fess2=1-"
+  document.test.tbook.options[3].text="Hamare Ateet";
+  document.test.tbook.options[3].value="flipbook.htm?fhss1=1-1"
+  document.test.tbook.options[4].text="Social And Political Life";
+  document.test.tbook.options[4].value="flipbook.htm?fess3=1-1"
+  document.test.tbook.options[5].text="Samajik Evem Rajnitik Jeevan";
+  document.test.tbook.options[5].value="flipbook.htm?fhss3=1-1"
+  document.test.tbook.options[6].text="Prithavi Hamara Avas (Bhugol)";
+  document.test.tbook.options[6].value="flipbook.htm?fhss2=1-1"
+  document.test.tbook.options[7].text="Hamare Maazi(Urdu)";
+  document.test.tbook.options[7].value="flipbook.htm?fuhm1=1-1"
+  document.test.tbook.options[8].text="Zameen Hamara Maskan(Urdu)";
+  document.test.tbook.options[8].value="flipbook.htm?fuzm1=1-1"
+  document.test.tbook.options[9].text="Samazi Aur Siyasi Zindagi(Urdu)";
+  document.test.tbook.options[9].value="flipbook.htm?fuss1=1-1"
+  }
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ruchira";
+  document.test.tbook.options[1].value="flipbook.htm?fhsk1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Vigyan";
+  document.test.tbook.options[1].value="flipbook.htm?fhsc1=1-1"
+  document.test.tbook.options[2].text="Science";
+  document.test.tbook.options[2].value="flipbook.htm?fesc1=1-1"
+  document.test.tbook.options[3].text="science-VI(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?fuse1=1-16"
+  //document.test.tbook.options[4].text="Exemplar Problem";
+  //document.test.tbook.options[4].value="flipbook.htm?feep2=1-16"
+
+
+  }
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Apni Zuban-VI";
+  document.test.tbook.options[1].value="flipbook.htm?fuaz1=1-20"
+  document.test.tbook.options[2].text="Urdu Guldasta";
+  document.test.tbook.options[2].value="flipbook.htm?fuug1=1-1"
+  document.test.tbook.options[3].text="Jaan Pahechan ";
+  document.test.tbook.options[3].value="flipbook.htm?fujp1=1-32"
+  //<!--document.test.tbook.options[2].text="Riyazi-VI";
+  //document.test.tbook.options[2].value="flipbook.htm?furi1=1-14"-->
+  //<!--document.test.tbook.options[3].text="science-VI";
+  //document.test.tbook.options[3].value="flipbook.htm?fuse1=1-16"-->
+  //<!--document.test.tbook.options[4].text="Hamare Maz";
+  //document.test.tbook.options[4].value="flipbook.htm?fuhm1=1-12"-->
+  document.test.tbook.options[4].text="Zameen Hamara Maskan";
+  document.test.tbook.options[4].value="flipbook.htm?fuzm1=1-8"
+  //document.test.tbook.options[6].text="Samazi Aur Siyasi Zindagi";
+  //document.test.tbook.options[6].value="flipbook.htm?fuss1=1-8"-->
+
+
+  }
+  else if((document.test.tclass.value==6) && (document.test.tsubject.options[sind].text=="Yoga"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="A Healthy way of living";
+  document.test.tbook.options[1].value="flipbook.htm?tiyhwlups1=1-1"
+
+
+
+  }
+
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ganit";
+  document.test.tbook.options[1].value="flipbook.htm?ghmh1=1-1"
+  document.test.tbook.options[2].text="Mathmatics";
+  document.test.tbook.options[2].value="flipbook.htm?gemh1=1-1"
+  document.test.tbook.options[3].text="Hisab(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?guma1=1-1"
+  //document.test.tbook.options[4].text="Exemplar Problem(English)";
+  //document.test.tbook.options[4].value="flipbook.htm?gemp1=1-13"
+
+
+
+  }
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Science";
+  document.test.tbook.options[1].value="flipbook.htm?gesc1=1-1"
+  document.test.tbook.options[2].text="Vigyan";
+  document.test.tbook.options[2].value="flipbook.htm?ghsc1=1-1"
+  document.test.tbook.options[3].text="Science(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?guse1=1-1"
+  document.test.tbook.options[4].text="Exemplar Problems";
+  document.test.tbook.options[4].value="flipbook.htm?geep1=1-1"
+
+  }
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Honeycomb";
+  document.test.tbook.options[1].value="flipbook.htm?gehc1=1-1"
+  document.test.tbook.options[2].text="An alien Hand Supplementry Reader";
+  document.test.tbook.options[2].value="flipbook.htm?geah1=1-1"
+
+  }
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ruchira";
+  document.test.tbook.options[1].value="flipbook.htm?ghsk1=1-1"
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[2].value=""
+
+  }
+
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Social Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Social and Political Life";
+  document.test.tbook.options[1].value="flipbook.htm?gess3=1-1"
+  document.test.tbook.options[2].text="Samajik aur Rajniti Jeevan";
+  document.test.tbook.options[2].value="flipbook.htm?ghss3=1-1"
+  document.test.tbook.options[3].text="Samajik Aur Siyasi Zindagi";
+  document.test.tbook.options[3].value="flipbook.htm?guss3=1-1"
+  document.test.tbook.options[4].text="Our Pasts-II";
+  document.test.tbook.options[4].value="flipbook.htm?gess1=1-1"
+  document.test.tbook.options[5].text="Hamare Ateet-II";
+  document.test.tbook.options[5].value="flipbook.htm?ghss1=1-1"
+  document.test.tbook.options[6].text="Our Environment";
+  document.test.tbook.options[6].value="flipbook.htm?gess2=1-1"
+  document.test.tbook.options[7].text="Hamara Paryavaran";
+  document.test.tbook.options[7].value="flipbook.htm?ghss2=1-1"
+  document.test.tbook.options[8].text="Hamare Maazi(Urdu)";
+  document.test.tbook.options[8].value="flipbook.htm?guhm1=1-1"
+  document.test.tbook.options[9].text="Hamare Mahol(Urdu)";
+  document.test.tbook.options[9].value="flipbook.htm?guha1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Vasant";
+  document.test.tbook.options[1].value="flipbook.htm?ghvs1=1-1"
+  document.test.tbook.options[2].text="Durva";
+  document.test.tbook.options[2].value="flipbook.htm?ghdv1=1-1"
+  document.test.tbook.options[3].text="Mahabharat";
+  document.test.tbook.options[3].value="flipbook.htm?ghmb1=1-1"
+
+  }
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Apni Zaban";
+  document.test.tbook.options[1].value="flipbook.htm?guaz1=1-1"
+  document.test.tbook.options[2].text="Urdu Guldasta-Suppl";
+  document.test.tbook.options[2].value="flipbook.htm?gugu1=1-1"
+  document.test.tbook.options[3].text="Door - Pass";
+  document.test.tbook.options[3].value="flipbook.htm?gudp1=1-1"
+  document.test.tbook.options[4].text="Jaan - Pehchan";
+  document.test.tbook.options[4].value="flipbook.htm?gujp1=1-1"
+
+
+
+  }
+  else if((document.test.tclass.value==7) && (document.test.tsubject.options[sind].text=="Yoga"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="A Healthy way of living";
+  document.test.tbook.options[1].value="flipbook.htm?tiyhwlups1=1-1"
+
+
+
+  }
+
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Honeydew";
+  document.test.tbook.options[1].value="flipbook.htm?hehd1=1-1"
+  document.test.tbook.options[2].text="It So Happend";
+  document.test.tbook.options[2].value="flipbook.htm?heih1=1-1"
+  document.test.tbook.options[3].text="";
+  document.test.tbook.options[3].value=""
+
+  }
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?hemh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?hhmh1=1-1"
+  document.test.tbook.options[3].text="Riyazi(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?huhi1=1-1"
+  //document.test.tbook.options[4].text="Exemplar Problem(English)";
+  //document.test.tbook.options[4].value="flipbook.htm?heep2=1-13"
+  //document.test.tbook.options[3].text="Hisab(Urdu)";
+  //document.test.tbook.options[3].value="/book_publishing/Class 8/Urdu book/MATH-VIII/Maths VII.htm"
+
+  }
+
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Ruchira";
+  document.test.tbook.options[1].value="flipbook.htm?hhsk1=1-1"
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[2].value=""
+
+  }
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Vasant";
+  document.test.tbook.options[1].value="flipbook.htm?hhvs1=1-1"
+  document.test.tbook.options[2].text="Durva";
+  document.test.tbook.options[2].value="flipbook.htm?hhdv1=1-1"
+  document.test.tbook.options[3].text="Bharat Ki Khoj";
+  document.test.tbook.options[3].value="flipbook.htm?hhbk1=1-1"
+  document.test.tbook.options[4].text="Sanshipt Budhcharit";
+  document.test.tbook.options[4].value="flipbook.htm?hhsb1=1-1"
+
+  }
+
+
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Science";
+  document.test.tbook.options[1].value="flipbook.htm?hesc1=1-1"
+  document.test.tbook.options[2].text="Vigyan";
+  document.test.tbook.options[2].value="flipbook.htm?hhsc1=1-1"
+  document.test.tbook.options[3].text="Science(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?huse1=1-18"
+  //document.test.tbook.options[4].text="Exemplar Problems";
+  //document.test.tbook.options[4].value="flipbook.htm?heep1=1-18"
+  //document.test.tbook.options[3].text="Science Aur Technology (Urdu)";
+  //document.test.tbook.options[3].value="/book_publishing/Class 8/Urdu book/science & technology-VIII/science & technology.htm"
+
+  }
+
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Social Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Resource And Development(Geography)";
+  document.test.tbook.options[1].value="flipbook.htm?hess4=1-1"
+  document.test.tbook.options[2].text="Sansadhan Avam Vikas(Bhugol)";
+  document.test.tbook.options[2].value="flipbook.htm?hhss4=1-1"
+  document.test.tbook.options[3].text="Social And Political Life";
+  document.test.tbook.options[3].value="flipbook.htm?hess3=1-1"
+  document.test.tbook.options[4].text="Samajik Avam Rajnatik Jeevan";
+  document.test.tbook.options[4].value="flipbook.htm?hhss3=1-1"
+  //document.test.tbook.options[5].text="Our-Pasts-III (Part-I) ";
+  document.test.tbook.options[5].text="Our-Pasts-III";
+
+  document.test.tbook.options[5].value="flipbook.htm?hess2=1-1"
+  document.test.tbook.options[6].text="Hamare Atit-III (Itihas) ";
+  document.test.tbook.options[6].value="flipbook.htm?hhss1=1-1"
+  //document.test.tbook.options[7].text="Our-Pasts-III (Part-II) ";
+  //document.test.tbook.options[7].value="flipbook.htm?hess2=1-1"
+  //document.test.tbook.options[8].text="Hamare Atit-III (Bhag-II) ";
+  //document.test.tbook.options[8].value="flipbook.htm?hhss2=1-1"
+  document.test.tbook.options[7].text="Geography(Urdu)";
+  document.test.tbook.options[7].value="flipbook.htm?hugy1=1-1"
+  document.test.tbook.options[8].text="Samaji Aur Siyasi Zindagi(Urdu)";
+  document.test.tbook.options[8].value="flipbook.htm?huss1=1-1"
+  document.test.tbook.options[9].text="Hamare Maazi Part-III (Urdu)";
+  document.test.tbook.options[9].value="flipbook.htm?huhm1=1-1"
+  //document.test.tbook.options[10].text="Hamare Maazi Part-II(Urdu)";
+  //document.test.tbook.options[10].value="flipbook.htm?huhm2=1-1"
+
+
+
+  }
+
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Environmental Education"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Project Books";
+  document.test.tbook.options[1].value="/book_publishing/envedu/8/8.htm"
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[2].value=""
+
+  }
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Apni Zaban";
+  document.test.tbook.options[1].value="flipbook.htm?huaz1=1-1"
+  document.test.tbook.options[2].text="Urdu Guldasta (Supl)";
+  document.test.tbook.options[2].value="flipbook.htm?huug1=1-1"
+  document.test.tbook.options[3].text="Door-Pass";
+  document.test.tbook.options[3].value="flipbook.htm?hudp1=1-1"
+  document.test.tbook.options[4].text="Jaan Pahechan";
+  document.test.tbook.options[4].value="flipbook.htm?hujp1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==8) && (document.test.tsubject.options[sind].text=="Yoga"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="A Healthy way of living";
+  document.test.tbook.options[1].value="flipbook.htm?tiyhwlups1=1-1"
+
+
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Beehive English Text Book";
+  document.test.tbook.options[1].value="flipbook.htm?iebe1=1-1"
+  document.test.tbook.options[2].text="Moments Supplimentary Reader";
+  document.test.tbook.options[2].value="flipbook.htm?iemo1=1-1"
+  document.test.tbook.options[3].text="Words and Expressions";
+  document.test.tbook.options[3].value="flipbook.htm?iewe1=1-11"
+
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Kshitij Hindi Text Book";
+  document.test.tbook.options[1].value="flipbook.htm?ihks1=1-1"
+  document.test.tbook.options[2].text="Sprash";
+  document.test.tbook.options[2].value="flipbook.htm?ihsp1=1-1"
+  document.test.tbook.options[3].text="Kritika";
+  document.test.tbook.options[3].value="flipbook.htm?ihkr1=1-1"
+  document.test.tbook.options[4].text="Sanchayan";
+  document.test.tbook.options[4].value="flipbook.htm?ihsa1=1-1"
+  document.test.tbook.options[5].text="";
+  document.test.tbook.options[5].value=""
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Shemushi Prathmo Bhag";
+  document.test.tbook.options[1].value="flipbook.htm?ihsh1=1-1"
+  document.test.tbook.options[2].text="Vyakaranavithi";
+  document.test.tbook.options[2].value="flipbook.htm?jhva1=1-1"
+  document.test.tbook.options[3].text="Abhyaswaan Bhav";
+  document.test.tbook.options[3].value="flipbook.htm?isab1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?iemh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?ihmh1=1-1"
+  document.test.tbook.options[3].text="Riyazi (Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?iumh1=1-15"
+  //document.test.tbook.options[4].text="Exemplar Problem(English)";
+  //document.test.tbook.options[4].value="flipbook.htm?ieep2=1-16"
+  //document.test.tbook.options[5].text="Exemplar Problem(Hindi)";
+  //document.test.tbook.options[5].value="flipbook.htm?ihep2=1-16"
+  //document.test.tbook.options[3].text="";
+  //document.test.tbook.options[3].value=""
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Science";
+  document.test.tbook.options[1].value="flipbook.htm?iesc1=1-1"
+  document.test.tbook.options[2].text="Vigyan";
+  document.test.tbook.options[2].value="flipbook.htm?ihsc1=1-1"
+  document.test.tbook.options[3].text="Science (Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?iusc1=1-1"
+  //document.test.tbook.options[4].text="Exemplar Problem(English)";
+  //document.test.tbook.options[4].value="flipbook.htm?ieep1=1-17"
+  //document.test.tbook.options[5].text="Exemplar Problem(Hindi)";
+  //document.test.tbook.options[5].value="flipbook.htm?ihep1=1-17"
+  //document.test.tbook.options[6].text="Lab Manual(English))";
+  //document.test.tbook.options[6].value="flipbook.htm?ielm1=1-5"
+  //document.test.tbook.options[7].text="Lab Manual(Hindi)";
+  //document.test.tbook.options[7].value="flipbook.htm?ihlm1=1-5"
+
+  }
+
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[6].text="Gulzare-e-urdu";
+  document.test.tbook.options[6].value="flipbook.htm?iugu1=1-1"
+  document.test.tbook.options[4].text="Nawa-e-urdu";
+  document.test.tbook.options[4].value="flipbook.htm?iuna1=1-1"
+  document.test.tbook.options[3].text="Jaan Pahechan";
+  document.test.tbook.options[3].value="flipbook.htm?iujp1=1-1"
+  document.test.tbook.options[5].text="Door Pass";
+  document.test.tbook.options[5].value="flipbook.htm?iudp1=1-1"
+  document.test.tbook.options[1].text="Sab Rang";
+  document.test.tbook.options[1].value="flipbook.htm?iusr1=1-1"
+
+  //document.test.tbook.options[7].text="Urdu Qwaid";
+  //document.test.tbook.options[7].value="flipbook.htm?iuqw1=1-1"
+
+  document.test.tbook.options[2].text="Urdu Ki Adabi Asnaf";
+  document.test.tbook.options[2].value="flipbook.htm?iuau1=1-23"
+  }
+
+
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Social Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Democratic Politics";
+  document.test.tbook.options[1].value="flipbook.htm?iess4=1-1"
+  document.test.tbook.options[2].text="Loktantrik Rajniti";
+  document.test.tbook.options[2].value="flipbook.htm?ihss4=1-1"
+  document.test.tbook.options[3].text="Contemporary India";
+  document.test.tbook.options[3].value="flipbook.htm?iess1=1-1"
+  document.test.tbook.options[4].text="Samkalin Bharat";
+  document.test.tbook.options[4].value="flipbook.htm?ihss1=1-1"
+  document.test.tbook.options[5].text="Arthashastra";
+  document.test.tbook.options[5].value="flipbook.htm?ihss2=1-1"
+  document.test.tbook.options[6].text="Economics";
+  document.test.tbook.options[6].value="flipbook.htm?iess2=1-1"
+  document.test.tbook.options[7].text="India and the Contempoarary World-I";
+  document.test.tbook.options[7].value="flipbook.htm?iess3=1-1"
+  document.test.tbook.options[8].text="Bharat Aur Samkalin Vishwa-I";
+  document.test.tbook.options[8].value="flipbook.htm?ihss3=1-1"
+  //document.test.tbook.options[9].text="Geographia(Urdu)";
+  //document.test.tbook.options[9].value="flipbook.htm?iuge1=1-6"
+  document.test.tbook.options[9].text="Jamhuri Syasat(Urdu)";
+  document.test.tbook.options[9].value="flipbook.htm?iuss4=1-1"
+  document.test.tbook.options[10].text="Hindustan Aur Asri Dunia-I(Urdu)";
+  document.test.tbook.options[10].value="flipbook.htm?iuhi1=1-8"
+  document.test.tbook.options[11].text="Aasri Hindustan";
+  document.test.tbook.options[11].value="flipbook.htm?iuss1=1-6"
+  document.test.tbook.options[12].text="Mashiyat";
+  document.test.tbook.options[12].value="flipbook.htm?iuss2=1-1"
+
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Environmental Education"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Project Books";
+  document.test.tbook.options[1].value="flipbook.htm?iepb1=pp-0"
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[2].value=""
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Yoga"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="A Healthy way of living";
+  document.test.tbook.options[1].value="flipbook.htm?tiyhwlss1=1-1"
+  }
+
+
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Vocational"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Hand Embroidery (Addawala)";
+  document.test.tbook.options[1].value="flipbook.htm?ieve1=1-5"
+  document.test.tbook.options[2].text="Solanaceous Crop Cultivator";
+  document.test.tbook.options[2].value="flipbook.htm?ievs1=1-5"
+  document.test.tbook.options[3].text="Animal Health Worker";
+  document.test.tbook.options[3].value="flipbook.htm?ievw1=1-5"
+  document.test.tbook.options[4].text="Hand Embroiderer";
+  document.test.tbook.options[4].value="flipbook.htm?ievh1=1-5"
+  document.test.tbook.options[5].text="Assistant Beauty Therapist";
+  document.test.tbook.options[5].value="flipbook.htm?ievt1=1-3"
+  document.test.tbook.options[6].text="Store Operations Assistant";
+  document.test.tbook.options[6].value="flipbook.htm?ieva1=1-4"
+  document.test.tbook.options[7].text="Cashier";
+  document.test.tbook.options[7].value="flipbook.htm?ievc1=1-5"
+
+  }
+
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="ICT"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="ICT";
+  document.test.tbook.options[1].value="flipbook.htm?ict1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==9) && (document.test.tsubject.options[sind].text=="Health and Physical Education"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Health and Physical Education";
+  document.test.tbook.options[1].value="flipbook.htm?iehp1=1-1"
+
+
+  }
+
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?jemh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?jhmh1=1-1"
+  document.test.tbook.options[3].text="Riyazi";
+  document.test.tbook.options[3].value="flipbook.htm?jumh1=1-1"
+  // <!--document.test.tbook.options[4].text="Exemplars Problem(English)";
+  // <!--document.test.tbook.options[4].value="flipbook.htm?jeep2=1-1"
+  // <!--document.test.tbook.options[5].text="Exemplars Problem(Hindi)";
+  // <!--document.test.tbook.options[5].value="flipbook.htm?jhep2=1-1"
+
+
+
+
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Science";
+  document.test.tbook.options[1].value="flipbook.htm?jesc1=1-1"
+  document.test.tbook.options[2].text="Vigyan";
+  document.test.tbook.options[2].value="flipbook.htm?jhsc1=1-1"
+  document.test.tbook.options[3].text="Science(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?jusc1=1-1"
+  //document.test.tbook.options[3].text="Exemplar Problem(English)";
+  //document.test.tbook.options[3].value="flipbook.htm?jeep1=1-18"
+  //document.test.tbook.options[4].text="Exemplar Problem(Hindi)";
+  //document.test.tbook.options[4].value="flipbook.htm?jhep1=1-18"
+  //document.test.tbook.options[5].text="Lab Manual(English)";
+  //document.test.tbook.options[5].value="flipbook.htm?jelm1=1-6"
+  //document.test.tbook.options[6].text="Lab Manual(Hindi)";
+  //document.test.tbook.options[6].value="flipbook.htm?jhlm1=1-6"
+
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Kshitij-2";
+  document.test.tbook.options[1].value="flipbook.htm?jhks1=1-1"
+  document.test.tbook.options[2].text="Sparsh";
+  document.test.tbook.options[2].value="flipbook.htm?jhsp1=1-1"
+  document.test.tbook.options[3].text="Sanchayan Bhag-2";
+  document.test.tbook.options[3].value="flipbook.htm?jhsy1=1-1"
+  document.test.tbook.options[4].text="Kritika";
+  document.test.tbook.options[4].value="flipbook.htm?jhkr1=1-1"
+  document.test.tbook.options[5].text="";
+  document.test.tbook.options[5].value=""
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="First Flight";
+  document.test.tbook.options[1].value="flipbook.htm?jeff1=1-1"
+  document.test.tbook.options[2].text="Foot Prints Without feet Supp. Reader";
+  document.test.tbook.options[2].value="flipbook.htm?jefp1=1-1"
+  document.test.tbook.options[3].text=" Words and Expressions";
+  document.test.tbook.options[3].value="flipbook.htm?jewe2=1-1"
+
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Social Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+
+  document.test.tbook.options[1].text="Samkalin Bharat";
+  document.test.tbook.options[1].value="flipbook.htm?jhss1=1-1"
+  document.test.tbook.options[2].text="Aasri Hindustan-II";
+  document.test.tbook.options[2].value="flipbook.htm?juss1=1-1"
+  document.test.tbook.options[3].text="Understanding Economic Development";
+  document.test.tbook.options[3].value="flipbook.htm?jess2=1-1"
+  document.test.tbook.options[4].text="Arthik Vikas ki Samajh";
+  document.test.tbook.options[4].value="flipbook.htm?jhss2=1-1"
+  document.test.tbook.options[5].text="Maashi Taraqqui Ki Samajh";
+  document.test.tbook.options[5].value="flipbook.htm?juss2=1-1"
+  document.test.tbook.options[6].text="India and the Contemporary World-II ";
+  document.test.tbook.options[6].value="flipbook.htm?jess3=1-1"
+  document.test.tbook.options[7].text="Bharat Aur Samakalin Vishav-2";
+  document.test.tbook.options[7].value="flipbook.htm?jhss3=1-1"
+  document.test.tbook.options[8].text="Hindustan Aur Asri Duniya";
+  document.test.tbook.options[8].value="flipbook.htm?juss3=1-1"
+  document.test.tbook.options[9].text="Democratic Politics";
+  document.test.tbook.options[9].value="flipbook.htm?jess4=1-1"
+  document.test.tbook.options[10].text="Loktantrik Rajniti";
+  document.test.tbook.options[10].value="flipbook.htm?jhss4=1-1"
+  document.test.tbook.options[11].text="Jamhuri Siyasat-II ";
+  document.test.tbook.options[11].value="flipbook.htm?juss4=1-1"
+  document.test.tbook.options[12].text="Contemporary India ";
+  document.test.tbook.options[12].value="flipbook.htm?jess1=1-1"
+
+
+
+  }
+
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Shemushi";
+  document.test.tbook.options[1].value="flipbook.htm?jhsk1=1-1"
+  document.test.tbook.options[2].text="Abhyasvan Bhaav";
+  document.test.tbook.options[2].value="flipbook.htm?jsab1=1-1"
+  document.test.tbook.options[3].text="Vyakaranavithi";
+  document.test.tbook.options[3].value="flipbook.htm?jhva1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Gulzar-e-Urdu";
+  document.test.tbook.options[1].value="flipbook.htm?juge1=1-12"
+  document.test.tbook.options[2].text="Nawa-e-Urdu";
+  document.test.tbook.options[2].value="flipbook.htm?june1=1-1"
+  //document.test.tbook.options[3].text="Urdu Qwaid aur Insha";
+  //document.test.tbook.options[3].value="flipbook.htm?juuq1=1-22"
+  document.test.tbook.options[3].text="Jaan Pahechan";
+  document.test.tbook.options[3].value="flipbook.htm?jujp1=1-1"
+  document.test.tbook.options[4].text="Door-Paas";
+  document.test.tbook.options[4].value="flipbook.htm?judp1=1-1"
+  document.test.tbook.options[5].text="Sab Rang";
+  document.test.tbook.options[5].value="flipbook.htm?jusr1=1-1"
+
+  // <!--document.test.tbook.options[6].text="Riyazi (Maths)";-->
+  // <!--document.test.tbook.options[6].value="flipbook.htm?jumh1=1-1"-->
+
+
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Environmental Education"))
+  {
+  //document.test.tbook.options[0].text="..Select Book Title..";
+  //document.test.tbook.options[1].text="Project Books";
+  document.test.tbook.options[1].value=""
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[2].value=""
+
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Yoga"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="A Healthy way of living";
+  document.test.tbook.options[1].value="flipbook.htm?tiyhwlss1=1-1"
+
+
+
+  }
+  else if((document.test.tclass.value==10) && (document.test.tsubject.options[sind].text=="Health and Physical Education"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Health and Physical Education";
+  document.test.tbook.options[1].value="flipbook.htm?jehp1=1-1"
+
+
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Bhaswati";
+  document.test.tbook.options[1].value="flipbook.htm?khsk1=1-1"
+  document.test.tbook.options[2].text="Shashwati";
+  document.test.tbook.options[2].value="flipbook.htm?khsk2=1-1"
+  document.test.tbook.options[3].text="Sahitya Parichay";
+  document.test.tbook.options[3].value="flipbook.htm?klss1=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Accountancy"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Financial Accounting-I";
+  document.test.tbook.options[1].value="flipbook.htm?keac1=1-1"
+  document.test.tbook.options[2].text="Lekhashastra-I";
+  document.test.tbook.options[2].value="flipbook.htm?khac1=1-1"
+  document.test.tbook.options[3].text="Accountancy-II";
+  document.test.tbook.options[3].value="flipbook.htm?keac2=1-0"
+  document.test.tbook.options[4].text="Lekhashastra-II";
+  document.test.tbook.options[4].value="flipbook.htm?khac2=1-0"
+  document.test.tbook.options[5].text="Khatadari-I(Urdu)";
+  document.test.tbook.options[5].value="flipbook.htm?kuac1=1-1"
+  document.test.tbook.options[6].text="Khatadari-II(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?kuac2=1-5"
+
+
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Business Studies"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Business Studies";
+  document.test.tbook.options[1].value="flipbook.htm?kebs1=1-1"
+  document.test.tbook.options[2].text="Vyavsay Adhyanan";
+  document.test.tbook.options[2].value="flipbook.htm?khbs1=1-1"
+  document.test.tbook.options[3].text="Karobaari Mutalah";
+  document.test.tbook.options[3].value="flipbook.htm?kubs1=1-11"
+  //document.test.tbook.options[3].text="Karobari Uloom I";
+  //document.test.tbook.options[3].value="flipbook.htm?kubs1=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Chemistry"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Chemistry Part-I";
+  document.test.tbook.options[1].value="flipbook.htm?kech1=1-1"
+  document.test.tbook.options[2].text="Rasayan Vigyan bhag-I";
+  document.test.tbook.options[2].value="flipbook.htm?khch1=1-1"
+  document.test.tbook.options[3].text="Keemiya I";
+  document.test.tbook.options[3].value="flipbook.htm?kuch1=1-1"
+  document.test.tbook.options[4].text="Chemistry Part II";
+  document.test.tbook.options[4].value="flipbook.htm?kech2=1-1"
+  document.test.tbook.options[5].text="Rasayan Vigyan bhag-II";
+  document.test.tbook.options[5].value="flipbook.htm?khch2=1-1"
+  document.test.tbook.options[6].text="Keemiya II";
+  document.test.tbook.options[6].value="flipbook.htm?kuch2=1-1"
+  //document.test.tbook.options[7].text="Online Chemistry book Part I";
+  //document.test.tbook.options[7].value="http://www.ncert.nic.in/online_sub_books/chemistry/chem_I_ps.html"
+
+
+  //document.test.tbook.options[7].text="Exemplar Problems(English)";
+  //document.test.tbook.options[7].value="flipbook.htm?keep5=1-1"
+  //document.test.tbook.options[8].text="Exemplar Problems(Hindi)";
+  //document.test.tbook.options[8].value="flipbook.htm?khep5=1-1"
+  //document.test.tbook.options[9].text="Lab Manual(English)";
+  //document.test.tbook.options[9].value="flipbook.htm?kelm2=1-1"
+  //document.test.tbook.options[10].text="Lab Manual(Hindi)";
+  //document.test.tbook.options[10].value="flipbook.htm?khlm2=1-1"
+
+
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics";
+  document.test.tbook.options[1].value="flipbook.htm?kemh1=1-1"
+  document.test.tbook.options[2].text="Ganit";
+  document.test.tbook.options[2].value="flipbook.htm?khmh1=1-1"
+  document.test.tbook.options[3].text="Riyazi I";
+  document.test.tbook.options[3].value="flipbook.htm?kumh1=1-1"
+
+
+  //document.test.tbook.options[3].text="Exemplar Problems(English)";
+  //document.test.tbook.options[3].value="flipbook.htm?keep2=1-1"
+  //document.test.tbook.options[4].text="Exemplar Problems(Hindi)";
+  //document.test.tbook.options[4].value="flipbook.htm?khep2=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Statistics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+
+  //document.test.tbook.options[3].text="Shumariat bara-e-mushaiat";
+  //document.test.tbook.options[3].value="/book_publishing/CLASS 11/Urdu Books/Statics for Economics-XI(Shumariat bara-e-mushaiat)/Statics.htm"
+  document.test.tbook.options[3].text="";
+  document.test.tbook.options[3].value=""
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Biology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Biology";
+  document.test.tbook.options[1].value="flipbook.htm?kebo1=1-1"
+  document.test.tbook.options[2].text="Jeev Vigyan";
+  document.test.tbook.options[2].value="flipbook.htm?khbo1=1-1"
+  document.test.tbook.options[3].text="Hayatiyaat";
+  document.test.tbook.options[3].value="flipbook.htm?kubo1=1-1"
+  //document.test.tbook.options[4].text="Hayatiyaat II";
+  //document.test.tbook.options[4].value="flipbook.htm?kubo2=1-1"
+
+  //document.test.tbook.options[5].text="Human Ecology and Family Science I";
+  //document.test.tbook.options[5].value="flipbook.htm?kehe1=1-1"
+  //document.test.tbook.options[6].text="Human Ecology and Family Science II";
+  //document.test.tbook.options[6].value="flipbook.htm?kehe2=1-1"
+
+  //document.test.tbook.options[6].text="Exemplar Problems(Hindi)";
+  //document.test.tbook.options[6].value="flipbook.htm?khep4=1-25"
+  //document.test.tbook.options[7].text="Lab Manual(English)";
+  //document.test.tbook.options[7].value="flipbook.htm?kelm3=1-17"
+
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Psychology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Introduction to Psychology";
+  document.test.tbook.options[1].value="flipbook.htm?kepy1=1-1"
+  document.test.tbook.options[2].text="Manovigyan";
+  document.test.tbook.options[2].value="flipbook.htm?khpy1=1-1"
+  document.test.tbook.options[3].text="Nafsiyaat ";
+  document.test.tbook.options[3].value="flipbook.htm?kupy1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Economics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Indian Economic Development";
+  document.test.tbook.options[1].value="flipbook.htm?keec1=1-1"
+  document.test.tbook.options[2].text="Statistics for Economics";
+  document.test.tbook.options[2].value="flipbook.htm?kest1=1-1"
+  document.test.tbook.options[3].text="Sankhyiki";
+  document.test.tbook.options[3].value="flipbook.htm?khst1=1-1"
+  document.test.tbook.options[4].text="Bhartiya Airthryavstha Ka Vikas ";
+  document.test.tbook.options[4].value="flipbook.htm?khec1=1-1"
+  document.test.tbook.options[5].text="Shumariyaat Bar-e-Mushiyat(Urdu)";
+  document.test.tbook.options[5].value="flipbook.htm?kusc1=1-9"
+  document.test.tbook.options[6].text="Hindustan Ki Moaashi Tarraqqi(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?kuec1=1-1"
+
+  //document.test.tbook.options[3].text="Hindustan Ki Moaashi Tarraqqi(Urdu)";
+  //document.test.tbook.options[3].value="/book_publishing/CLASS 11/Urdu Books/Indian Economics & Development-XI/IndianEconomy.htm"
+  //document.test.tbook.options[4].text="Shumariyaat Bar-e-Mushiyat(Urdu)";
+  //document.test.tbook.options[4].value="flipbook.htm?kusc1=1-9"
+  //document.test.tbook.options[3].text="";
+  //document.test.tbook.options[3].value=""
+
+  }
+
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Geography"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Fundamental of Physical Geography";
+  document.test.tbook.options[1].value="flipbook.htm?kegy2=1-1"
+  document.test.tbook.options[2].text="Bhautique Bhugol ke Mool Sidhant";
+  document.test.tbook.options[2].value="flipbook.htm?khgy2=1-1"
+  document.test.tbook.options[3].text="Tabai Gugraphiya ke Mubadiyat";
+  document.test.tbook.options[3].value="flipbook.htm?kugy2=1-1"
+  document.test.tbook.options[4].text="Hindustan Tabiee Mahol (Urdu)";
+  document.test.tbook.options[4].value="flipbook.htm?kugy1=1-1"
+  //document.test.tbook.options[5].text="Geographia mein amli kaam (Urdu)";
+  //document.test.tbook.options[5].value="flipbook.htm?kegy1=1-22"
+  document.test.tbook.options[5].text="Pratical Work in Geography";
+  document.test.tbook.options[5].value="flipbook.htm?kegy3=1-1"
+  document.test.tbook.options[6].text="Bhugol Main Prayogatmak Karya";
+  document.test.tbook.options[6].value="flipbook.htm?khgy3=1-1"
+  document.test.tbook.options[7].text="India Physical Environment";
+  document.test.tbook.options[7].value="flipbook.htm?kegy1=1-1"
+  document.test.tbook.options[8].text="Bhart Bhautik Paryabaran";
+  document.test.tbook.options[8].value="flipbook.htm?khgy1=1-1"
+  document.test.tbook.options[9].text="Geography Mein Aamli Kaam";
+  document.test.tbook.options[9].value="flipbook.htm?kugy3=1-8"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Physics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Physics Part-I";
+  document.test.tbook.options[1].value="flipbook.htm?keph1=1-1"
+  document.test.tbook.options[2].text="Bhautiki-I";
+  document.test.tbook.options[2].value="flipbook.htm?khph1=1-1"
+  document.test.tbook.options[6].text="Tabiyaat-I";
+  document.test.tbook.options[6].value="flipbook.htm?kuph1=1-8"
+  document.test.tbook.options[3].text="Physics Part-II";
+  document.test.tbook.options[3].value="flipbook.htm?keph2=1-1"
+  document.test.tbook.options[4].text="Bhautiki-II";
+  document.test.tbook.options[4].value="flipbook.htm?khph2=1-1"
+  document.test.tbook.options[5].text="Tabiyaat-II";
+  document.test.tbook.options[5].value="flipbook.htm?kuph2=1-7"
+  //document.test.tbook.options[7].text="Exemplar Problems(English)";
+  //document.test.tbook.options[7].value="flipbook.htm?keep3=1-17"
+  //document.test.tbook.options[8].text="Exemplar Problems(Hindi)";
+  //document.test.tbook.options[8].value="flipbook.htm?khep3=1-17"
+  //document.test.tbook.options[9].text="Lab Manual(English)";
+  //document.test.tbook.options[9].value="flipbook.htm?kelm1=1-14"
+
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Antra";
+  document.test.tbook.options[1].value="flipbook.htm?khat1=1-1"
+  document.test.tbook.options[2].text="Aroh";
+  document.test.tbook.options[2].value="flipbook.htm?khar1=1-1"
+  //document.test.tbook.options[3].text="Vyavaharik Hindi";
+  //document.test.tbook.options[3].value="/book_publishing/CLASS 11/Viyabharik Hindi11/ch11_vyawaharik_hindi.htm"
+  document.test.tbook.options[3].text="Vitan";
+  document.test.tbook.options[3].value="flipbook.htm?khvt1=1-1"
+  document.test.tbook.options[4].text="Antral";
+  document.test.tbook.options[4].value="flipbook.htm?khan1=1-1"
+  //document.test.tbook.options[6].text="Abhivyakti Aur Madhyam";
+  //document.test.tbook.options[6].value="flipbook.htm?lham1=1-1"
+
+  //document.test.tbook.options[5].text="Abhivyakti Aur Madhyam";
+  //document.test.tbook.options[5].value="flipbook.htm?kham1=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Sociology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Introducing Sociology";
+  document.test.tbook.options[1].value="flipbook.htm?kesy1=1-1"
+  document.test.tbook.options[2].text="Samajshastra-I";
+  document.test.tbook.options[2].value="flipbook.htm?khsy1=1-1"
+  document.test.tbook.options[3].text="Samajiyaat Ka Tarf";
+  document.test.tbook.options[3].value="flipbook.htm?kusy1=1-1"
+  document.test.tbook.options[4].text="Understanding Society";
+  document.test.tbook.options[4].value="flipbook.htm?kesy2=1-1"
+  document.test.tbook.options[5].text="Samaj ka Bodh";
+  document.test.tbook.options[5].value="flipbook.htm?khsy2=1-1"
+  document.test.tbook.options[6].text="Mutala-e-Muashira";
+  document.test.tbook.options[6].value="flipbook.htm?kusy2=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Woven Words";
+  document.test.tbook.options[1].value="flipbook.htm?keww1=1-1"
+  document.test.tbook.options[2].text="Hornbill";
+  document.test.tbook.options[2].value="flipbook.htm?kehb1=1-1"
+  document.test.tbook.options[3].text="Snapshots Suppl.Reader English";
+  document.test.tbook.options[3].value="flipbook.htm?kesp1=1-1"
+  document.test.tbook.options[4].text="";
+  document.test.tbook.options[4].value=""
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Political Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Political Theory";
+  document.test.tbook.options[1].value="flipbook.htm?keps1=1-1"
+  document.test.tbook.options[2].text="Raajneeti Sidhant";
+  document.test.tbook.options[2].value="flipbook.htm?khps1=1-1"
+  document.test.tbook.options[3].text="Hindustani Aayen aur Kaam";
+  document.test.tbook.options[3].value="flipbook.htm?kups1=1-1"
+  //document.test.tbook.options[4].text="Indian Economic Development(Urdu)";
+  //document.test.tbook.options[4].value="flipbook.htm?kuec1=1-1"
+  document.test.tbook.options[4].text="India Constitution at Work";
+  document.test.tbook.options[4].value="flipbook.htm?keps2=1-1"
+  document.test.tbook.options[5].text="Bharat ka Samvidhan Sidhant aur Vyavhar";
+  document.test.tbook.options[5].value="flipbook.htm?khps2=1-1"
+  document.test.tbook.options[6].text="Siyasi Nazaria";
+  document.test.tbook.options[6].value="flipbook.htm?kups2=1-1"
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="History"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Themes in World History";
+  document.test.tbook.options[1].value="flipbook.htm?kehs1=1-1"
+  document.test.tbook.options[2].text="Vishwa Itihas Ke Kuch Vishay";
+  document.test.tbook.options[2].value="flipbook.htm?khhs1=1-1"
+  document.test.tbook.options[3].text="Tareekh-e-Alam per Mabni Mauzuaat Part I";
+  document.test.tbook.options[3].value="flipbook.htm?kuta1=1-1"
+  //document.test.tbook.options[4].text="";
+  //document.test.tbook.options[4].value=""
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Biotechnology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Biotechnology";
+  document.test.tbook.options[1].value="flipbook.htm?kebt1=1-12"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Informatics Practice"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Informatics Practice";
+  document.test.tbook.options[1].value="flipbook.htm?keip1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Computer Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Computer Science";
+  document.test.tbook.options[1].value="flipbook.htm?kecs1=1-1"
+  document.test.tbook.options[2].text="Computer Science - urdu";
+  document.test.tbook.options[2].value="flipbook.htm?kucs1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Home Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Human Ecology and Family Sciences Part I";
+  document.test.tbook.options[1].value="flipbook.htm?kehe1=1-2"
+  document.test.tbook.options[2].text="Human Ecology and Family Sciences Part II";
+  document.test.tbook.options[2].value="flipbook.htm?kehe2=1-2"
+  document.test.tbook.options[3].text="Manav Paristhitiki Bhag 1";
+  document.test.tbook.options[3].value="flipbook.htm?khhe1=1-2"
+  document.test.tbook.options[4].text="Manav Paristhitiki Bhag 2";
+  document.test.tbook.options[4].value="flipbook.htm?khhe2=1-2"
+  document.test.tbook.options[5].text="Insani Mahuliyat Aur Uloome-e-Khandandari Part I";
+  document.test.tbook.options[5].value="flipbook.htm?kuim1=1-10"
+  document.test.tbook.options[6].text="Insani Mahuliyat Aur Uloome-e-Khandandari Part II";
+  document.test.tbook.options[6].value="flipbook.htm?kuim2=1-9"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Creative Writing and Translation"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Takhleequi Jauhar";
+  document.test.tbook.options[1].value="flipbook.htm?kucw1=1-4"
+  document.test.tbook.options[2].text="Srijan I";
+  document.test.tbook.options[2].value="flipbook.htm?khsr1=1-1"
+
+
+  }
+
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Heritage Crafts"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Living Craft Traditions of India";
+  document.test.tbook.options[1].value="flipbook.htm?kehc1=1-1"
+  document.test.tbook.options[2].text="Hindustan me Dastkari Ki Riwayat";
+  document.test.tbook.options[2].value="flipbook.htm?kuhc1=1-1"
+  //document.test.tbook.options[3].text="Dastkari";
+  //document.test.tbook.options[3].value="flipbook.htm?kuhc2=1-10"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Graphics design"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="The story of graphic design";
+  document.test.tbook.options[1].value="flipbook.htm?kegd1=1-1"
+  document.test.tbook.options[2].text="graphic design ek kahani";
+  document.test.tbook.options[2].value="flipbook.htm?khgd1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Computers and Communication Technology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="CCT Part-I";
+  document.test.tbook.options[1].value="flipbook.htm?kect1=1-1"
+  document.test.tbook.options[2].text="CCT Part-II";
+  document.test.tbook.options[2].value="flipbook.htm?kect2=1-1"
+  document.test.tbook.options[3].text="Computer Aur Muwaslati Technology I";
+  document.test.tbook.options[3].value="flipbook.htm?kuct1=1-1"
+  document.test.tbook.options[4].text="Computer Aur Muwaslati Technology II";
+  document.test.tbook.options[4 ].value="flipbook.htm?kuct2=1-1"
+  document.test.tbook.options[5].text="Computer aur Sanchar Prodhogiki (Bhag-I)";
+  document.test.tbook.options[5].value="flipbook.htm?khhc1=1-1"
+  document.test.tbook.options[6].text="Computer and Sanchar Prodhoki (Bhag-II)";
+  document.test.tbook.options[6].value="flipbook.htm?khhc2=1-1"
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Fine Art"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="An Introduction to Indian Art Part-I";
+  document.test.tbook.options[1].value="flipbook.htm?kefa1=1-1"
+  document.test.tbook.options[2].text="Bhartiya Kala Ek Parichay";
+  document.test.tbook.options[2].value="flipbook.htm?khfa1=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Nai Awaz";
+  document.test.tbook.options[1].value="flipbook.htm?kuna1=1-1"
+  document.test.tbook.options[2].text="Dhanak";
+  document.test.tbook.options[2].value="flipbook.htm?kudh1=1-1"
+  document.test.tbook.options[3].text="Khayaban-e-Urdu";
+  document.test.tbook.options[3].value="flipbook.htm?kuku1=1-1"
+  document.test.tbook.options[4].text="Gulstan-e- Adab";
+  document.test.tbook.options[4].value="flipbook.htm?kuga1=1-1"
+
+  }
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Sangeet"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Tabla evam Pakhawaj";
+  document.test.tbook.options[1].value="flipbook.htm?khtp1=1-8"
+  document.test.tbook.options[2].text="Hindustani Sangeet Gayan Evam Vadan";
+  document.test.tbook.options[2].value="flipbook.htm?khgv1=1-10"
+
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Health and Physical Education"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Health and Physical Education";
+  document.test.tbook.options[1].value="flipbook.htm?kehp1=1-1"
+
+
+  }
+
+  else if((document.test.tclass.value==11) && (document.test.tsubject.options[sind].text=="Knowledge Traditions Practices of India"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Knowledge Traditions Practices of India";
+  document.test.tbook.options[1].value="flipbook.htm?keks1=1-1"
+
+
+  }
+
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Accountancy"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Accountancy-I";
+  document.test.tbook.options[1].value="flipbook.htm?leac1=1-1"
+  document.test.tbook.options[2].text="Accountancy Part-II";
+  document.test.tbook.options[2].value="flipbook.htm?leac2=1-1"
+  document.test.tbook.options[3].text="Lekhashastra Part-I";
+  document.test.tbook.options[3].value="flipbook.htm?lhac1=1-1"
+  document.test.tbook.options[4].text="Lekhashastra Part-II";
+  document.test.tbook.options[4].value="flipbook.htm?lhac2=1-1"
+  document.test.tbook.options[5].text="Computerised Accounting System";
+  document.test.tbook.options[5].value="flipbook.htm?leca1=1-1"
+  document.test.tbook.options[6].text="Khatadari-I(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?luac1=1-12"
+  document.test.tbook.options[7].text="Khatadari-II(Urdu)";
+  document.test.tbook.options[7].value="flipbook.htm?luac2=1-12"
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Mathematics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Mathematics Part-I";
+  document.test.tbook.options[1].value="flipbook.htm?lemh1=1-1"
+  document.test.tbook.options[2].text="Mathematics Part-II";
+  document.test.tbook.options[2].value="flipbook.htm?lemh2=1-1"
+  document.test.tbook.options[3].text="Ganit-I";
+  document.test.tbook.options[3].value="flipbook.htm?lhmh1=1-1"
+  document.test.tbook.options[4].text="Ganit-II";
+  document.test.tbook.options[4].value="flipbook.htm?lhmh2=1-1"
+  document.test.tbook.options[5].text="Riyazi-I";
+  document.test.tbook.options[5].value="flipbook.htm?lumh1=1-1"
+  document.test.tbook.options[6].text="Riyazi-II";
+  document.test.tbook.options[6].value="flipbook.htm?lumh2=1-1"
+
+  //document.test.tbook.options[7].text="Exemplar Problems(English)";
+  //document.test.tbook.options[7].value="flipbook.htm?leep2=1-16"
+  //document.test.tbook.options[8].text="Exemplar Problems(Hindi)";
+  //document.test.tbook.options[8].value="flipbook.htm?lhep2=1-15"
+  //document.test.tbook.options[9].text="";
+  //document.test.tbook.options[9].value=""
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Physics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Physics Part-I";
+  document.test.tbook.options[1].value="flipbook.htm?leph1=1-1"
+  document.test.tbook.options[2].text="Physics Part-II";
+  document.test.tbook.options[2].value="flipbook.htm?leph2=1-1"
+  document.test.tbook.options[3].text="Bhautiki-I";
+  document.test.tbook.options[3].value="flipbook.htm?lhph1=1-1"
+  document.test.tbook.options[4].text="Bhautiki-II";
+  document.test.tbook.options[4].value="flipbook.htm?lhph2=1-1"
+  document.test.tbook.options[5].text="Tabiyaat-I";
+  document.test.tbook.options[5].value="flipbook.htm?luph1=1-1"
+  document.test.tbook.options[6].text="Tabiyaat-II";
+  document.test.tbook.options[6].value="flipbook.htm?luph2=1-1"
+  //document.test.tbook.options[7].text="Examplar Prolems(English)";
+  //document.test.tbook.options[7].value="flipbook.htm?leep6=1-17"
+  //document.test.tbook.options[8].text="Examplar Problems(Hindi)";
+  //document.test.tbook.options[8].value="flipbook.htm?lhep6=1-17"
+  //document.test.tbook.options[9].text="Lab Manual(English)";
+  //document.test.tbook.options[9].value="flipbook.htm?lelm3=1-7"
+  //document.test.tbook.options[10].text="";
+  //document.test.tbook.options[10].value=""
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Antra";
+  document.test.tbook.options[1].value="flipbook.htm?lhat1=1-1"
+  document.test.tbook.options[2].text="Aroh";
+  document.test.tbook.options[2].value="flipbook.htm?lhar1=1-1"
+  document.test.tbook.options[3].text="Vitan";
+  document.test.tbook.options[3].value="flipbook.htm?lhvt1=1-1"
+  //document.test.tbook.options[4].text="Abhivyakti Aur Madhyam";
+  //document.test.tbook.options[4].value="flipbook.htm?lham1=1-1"
+  document.test.tbook.options[4].text="Antral Bhag 2";
+  document.test.tbook.options[4].value="flipbook.htm?lhan1=1-1"
+  document.test.tbook.options[5].text="Abhivyakti Aur Madhyam";
+  document.test.tbook.options[5].value="flipbook.htm?kham1=1-1"
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="English"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Kaliedoscope";
+  document.test.tbook.options[1].value="flipbook.htm?lekl1=1-1"
+  document.test.tbook.options[2].text="Flamingo";
+  document.test.tbook.options[2].value="flipbook.htm?lefl1=1-1"
+  document.test.tbook.options[3].text="Vistas";
+  document.test.tbook.options[3].value="flipbook.htm?levt1=1-1"
+  document.test.tbook.options[4].text="";
+  document.test.tbook.options[4].value=""
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Home Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Human Ecology and Family Science part I";
+  document.test.tbook.options[1].value="flipbook.htm?lehe1=1-10"
+  document.test.tbook.options[2].text="Human Ecology and Family Science part II";
+  document.test.tbook.options[2].value="flipbook.htm?lehe2=1-15"
+  document.test.tbook.options[3].text="Manav Parishithki Bhag 1";
+  document.test.tbook.options[3].value="flipbook.htm?lehh1=1-10"
+  document.test.tbook.options[4].text="Manav Parishithki Bhag 2";
+  document.test.tbook.options[4].value="flipbook.htm?lehh2=1-15"
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Biology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Biology";
+  document.test.tbook.options[1].value="flipbook.htm?lebo1=1-1"
+  document.test.tbook.options[2].text="Jeev Vigyan";
+  document.test.tbook.options[2].value="flipbook.htm?lhbo1=1-1"
+  document.test.tbook.options[3].text="Hayatiyaat";
+  document.test.tbook.options[3].value="flipbook.htm?lubo1=1-1"
+  //document.test.tbook.options[4].text="Exemplar Problems";
+  //document.test.tbook.options[4].value="flipbook.htm?leep4=1-19"
+  //document.test.tbook.options[5].text="Lab Manual(English)";
+  //document.test.tbook.options[5].value="flipbook.htm?lelm2=1-16"
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="History"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Themes in Indian History-I";
+  document.test.tbook.options[1].value="flipbook.htm?lehs1=1-1"
+  document.test.tbook.options[2].text="Bharatiya Itihas ke kuchh Vishay-I";
+  document.test.tbook.options[2].value="flipbook.htm?lhhs1=1-1"
+  document.test.tbook.options[3].text="Themes in Indian History-II";
+  document.test.tbook.options[3].value="flipbook.htm?lehs2=1-1"
+  document.test.tbook.options[4].text="Bharatiya Itihas ke kuchh Vishay-II ";
+  document.test.tbook.options[4].value="flipbook.htm?lhhs2=1-1"
+  document.test.tbook.options[5].text="Themes in Indian History-III";
+  document.test.tbook.options[5].value="flipbook.htm?lehs3=1-1"
+  document.test.tbook.options[6].text="Bharatiya Itihas ke kuchh Vishay-III";
+  document.test.tbook.options[6].value="flipbook.htm?lhhs3=1-1"
+  document.test.tbook.options[7].text="Tareekh-e-Hind ke Mauzuaat-I(Urdu)";
+  document.test.tbook.options[7].value="flipbook.htm?luth1=1-9"
+  document.test.tbook.options[8].text="Tareekh-e-Hind ke Mauzuaat-II(Urdu)";
+  document.test.tbook.options[8].value="flipbook.htm?luth2=1-5"
+  document.test.tbook.options[9].text="Tareekh-e-Hind ke Mauzuaat-III(Urdu)";
+  document.test.tbook.options[9].value="flipbook.htm?luth3=1-5"
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Geography"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Fundamentals of Human Geography";
+  document.test.tbook.options[1].value="flipbook.htm?legy1=1-1"
+  document.test.tbook.options[2].text="Practical Work in Geography Part II";
+  document.test.tbook.options[2].value="flipbook.htm?legy3=1-1"
+  document.test.tbook.options[3].text="Manav Bhugol Ke Mool Sidhant";
+  document.test.tbook.options[3].value="flipbook.htm?lhgy1=1-1"
+  document.test.tbook.options[4].text="Bhogol main peryojnatmak karye";
+  document.test.tbook.options[4].value="flipbook.htm?lhgy3=1-1"
+  document.test.tbook.options[5].text="India -People And Economy";
+  document.test.tbook.options[5].value="flipbook.htm?legy2=1-1"
+  document.test.tbook.options[6].text="Bharat log aur arthvyasastha(Bhugol)";
+  document.test.tbook.options[6].value="flipbook.htm?lhgy2=1-1"
+  document.test.tbook.options[7].text="Insani Jughrafia Ke Buniyadi Usool(Urdu) ";
+  document.test.tbook.options[7].value="flipbook.htm?lufh1=1-1"
+  document.test.tbook.options[8].text=" Hindustan Awam Aur Maishat(Urdu)";
+  document.test.tbook.options[8].value="flipbook.htm?lugy1=1-1"
+  document.test.tbook.options[9].text=" Jughrafia Mein Aamli Kam(Urdu)";
+  document.test.tbook.options[9].value="flipbook.htm?lugy3=1-1"
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Psychology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Psychology";
+  document.test.tbook.options[1].value="flipbook.htm?lepy1=1-1"
+  document.test.tbook.options[2].text="Manovigyan";
+  document.test.tbook.options[2].value="flipbook.htm?lhpy1=1-1"
+  document.test.tbook.options[3].text="Nafsiat(Urdu)";
+  document.test.tbook.options[3].value="flipbook.htm?lupy1=1-1"
+  document.test.tbook.options[4].text="";
+  document.test.tbook.options[4].value=""
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Sociology"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Indian Society";
+  document.test.tbook.options[1].value="flipbook.htm?lesy1=1-1"
+  document.test.tbook.options[2].text="Bhartiya Samaj";
+  document.test.tbook.options[2].value="flipbook.htm?lhsy1=1-1"
+  document.test.tbook.options[3].text="Social Change and Development in India";
+  document.test.tbook.options[3].value="flipbook.htm?lesy2=1-1"
+  document.test.tbook.options[4].text="Bharat main Samajik Parivartan aur Vikas";
+  document.test.tbook.options[4].value="flipbook.htm?lhsy2=1-1"
+  document.test.tbook.options[5].text="Hindustani Samaj(Urdu)";
+  document.test.tbook.options[5].value="flipbook.htm?luis1=1-1"
+  document.test.tbook.options[6].text="Hindustan Mein Samaji Tabdili Aur Taraqqi(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?lusy2=1-1"
+
+
+
+  }
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Chemistry"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Chemistry-I";
+  document.test.tbook.options[1].value="flipbook.htm?lech1=1-1"
+  document.test.tbook.options[2].text="Chemistry-II";
+  document.test.tbook.options[2].value="flipbook.htm?lech2=1-1"
+  document.test.tbook.options[3].text="Rasayan vigyan bhag I";
+  document.test.tbook.options[3].value="flipbook.htm?lhch1=1-1"
+  document.test.tbook.options[4].text="Rasayan vigyan bhag II";
+  document.test.tbook.options[4].value="flipbook.htm?lhch2=1-1"
+  document.test.tbook.options[5].text="Keemiya-I";
+  document.test.tbook.options[5].value="flipbook.htm?luch1=1-1"
+  document.test.tbook.options[6].text="Keemiya-II";
+  document.test.tbook.options[6].value="flipbook.htm?luch2=1-1"
+  //document.test.tbook.options[5].text="Exemplar Problems";
+  //document.test.tbook.options[5].value="flipbook.htm?leep5=1-18"
+  //document.test.tbook.options[6].text="Exemplar Problems(Hindi)";
+  //document.test.tbook.options[6].value="flipbook.htm?lhep4=1-17"
+  //document.test.tbook.options[7].text="Lab Manual(English)";
+  //document.test.tbook.options[7].value="flipbook.htm?lelm1=1-11"
+  //document.test.tbook.options[8].text="Lab Manual(Hindi)";
+  //document.test.tbook.options[8].value="flipbook.htm?lhlm1=1-11"
+
+
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Bhaswati";
+  document.test.tbook.options[1].value="flipbook.htm?lhsk1=1-1"
+  document.test.tbook.options[2].text="Shaswati";
+  document.test.tbook.options[2].value="flipbook.htm?lhsk2=1-1"
+  document.test.tbook.options[3].text="Sahitya Parichay";
+  document.test.tbook.options[3].value="flipbook.htm?klss1=1-1"
+
+  }
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Political Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Contemporary World Politics";
+  document.test.tbook.options[1].value="flipbook.htm?leps1=1-1"
+  document.test.tbook.options[2].text="Samkalin Vishwa Rajniti";
+  document.test.tbook.options[2].value="flipbook.htm?lhps1=1-1"
+  document.test.tbook.options[3].text="Political Science-II";
+  document.test.tbook.options[3].value="flipbook.htm?leps2=1-1"
+  document.test.tbook.options[4].text="Swatantra Bharat Mein Rajniti-II";
+  document.test.tbook.options[4].value="flipbook.htm?lhps2=1-1"
+  document.test.tbook.options[5].text="Aasri Alami Siyasat(Urdu)";
+  document.test.tbook.options[5].value="flipbook.htm?lups1=1-1"
+  document.test.tbook.options[6].text="Azadi Ke Baad Hindustan Ki Siyasat(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?luab1=1-9"
+  }
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Economics"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Introductory Microeconomics";
+  document.test.tbook.options[1].value="flipbook.htm?leec2=1-1"
+  document.test.tbook.options[2].text="Introductory Macroeconomics";
+  document.test.tbook.options[2].value="flipbook.htm?leec1=1-1"
+  document.test.tbook.options[3].text="Vyashthi Arthshasrta";
+  document.test.tbook.options[3].value="flipbook.htm?lhec2=1-1"
+  document.test.tbook.options[4].text="Samashty Arthshastra Ek Parichay";
+  document.test.tbook.options[4].value="flipbook.htm?lhec1=1-1"
+  document.test.tbook.options[5].text="Juzvi Maashiyat ka Taruf(Urdu)";
+  document.test.tbook.options[5].value="flipbook.htm?lume1=1-6"
+  document.test.tbook.options[6].text="Kulli Maashiyat Ka Taruf(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?lume2=1-6"
+  document.test.tbook.options[7].text="";
+  document.test.tbook.options[7].value=""
+  }
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Business Studies"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Bussiness Studies-I";
+  document.test.tbook.options[1].value="flipbook.htm?lebs1=1-1"
+  document.test.tbook.options[2].text="Vyavasai Adhyan-I";
+  document.test.tbook.options[2].value="flipbook.htm?lhbs1=1-1"
+  document.test.tbook.options[3].text="Bussiness Studies-II";
+  document.test.tbook.options[3].value="flipbook.htm?lebs2=1-1"
+  document.test.tbook.options[4].text="Vyavasai Adhyan-II";
+  document.test.tbook.options[4].value="flipbook.htm?lhbs2=1-1"
+  document.test.tbook.options[5].text="Karobari Uloom I(Urdu)";
+  document.test.tbook.options[5].value="flipbook.htm?lubs1=1-8"
+  document.test.tbook.options[6].text="Karobari Uloom II(Urdu)";
+  document.test.tbook.options[6].value="flipbook.htm?lubs2=1-5"
+  }
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Gulistan-e- Adab";
+  document.test.tbook.options[1].value="flipbook.htm?luga1=1-1"
+  document.test.tbook.options[2].text="Khayaban-e-Urdu";
+  document.test.tbook.options[2].value="flipbook.htm?luku1=1-1"
+  document.test.tbook.options[3].text="Nai Awaz";
+  document.test.tbook.options[3].value="flipbook.htm?luna1=1-1"
+  document.test.tbook.options[4].text="Dhanak";
+  document.test.tbook.options[4].value="flipbook.htm?ludh1=1-1"
+
+
+  }
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Creative Writing & Translation"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Srijan Bhag II";
+  document.test.tbook.options[1].value="flipbook.htm?lhsr1=1-1"
+  document.test.tbook.options[2].text="Takhleequi Jauhar";
+  document.test.tbook.options[2].value="flipbook.htm?lucw1=1-1"
+
+  }
+
+
+
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Heritage Crafts"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  //document.test.tbook.options[1].text="Craft Tradition Of India";
+  //document.test.tbook.options[1].value="flipbook.htm?lehc1=1-9"
+  //document.test.tbook.options[1].text="Hindustan me Dastkari Ki Riwayat";
+  //document.test.tbook.options[1].value="flipbook.htm?luhc1=1-1"
+  document.test.tbook.options[1].text="Craft Tradition of India";
+  document.test.tbook.options[1].value="flipbook.htm?lehc1=1-1"
+  document.test.tbook.options[2].text="Bharatiya Hastkla Ki Paramparayen";
+  document.test.tbook.options[2].value="flipbook.htm?lhhc1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="New Age Graphics Design"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="New Age Graphics Design";
+  document.test.tbook.options[1].value="flipbook.htm?legd1=1-1"
+  document.test.tbook.options[2].text="";
+  document.test.tbook.options[2].value=""
+
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Fine Art"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="An Introduction to Indian Art Part-II";
+  document.test.tbook.options[1].value="flipbook.htm?lefa1=1-1"
+  document.test.tbook.options[2].text="Bhartiya Kala ka Itihaas Bhag II";
+  document.test.tbook.options[2].value="flipbook.htm?lhfa1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Computer Science"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Computer Science";
+  document.test.tbook.options[1].value="flipbook.htm?lecs1=1-13"
+
+
+  }
+  else if((document.test.tclass.value==12) && (document.test.tsubject.options[sind].text=="Informatics Practices"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Informatics Practices";
+  document.test.tbook.options[1].value="flipbook.htm?leip1=1-7"
+
+
+  }
+  else if((document.test.tclass.value==13) && (document.test.tsubject.options[sind].text=="Hindi"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Abhivyakti Aur Madhyam";
+  document.test.tbook.options[1].value="flipbook.htm?kham1=1-1"
+
+
+  }
+
+  else if((document.test.tclass.value==13) && (document.test.tsubject.options[sind].text=="Sanskrit"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Sanskrit Sahitya Parichay";
+  document.test.tbook.options[1].value="flipbook.htm?klss1=1-1"
+
+
+  }
+  else if((document.test.tclass.value==13) && (document.test.tsubject.options[sind].text=="Heritage Crafts"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Exploring Crafts Traditions of India";
+  document.test.tbook.options[1].value="flipbook.htm?mehc1=1-1"
+  document.test.tbook.options[2].text="Bhartiya Hastkala Parmaraon Ki Khoj";
+  document.test.tbook.options[2].value="flipbook.htm?khhc1=1-1"
+
+
+  }
+
+  else if((document.test.tclass.value==13) && (document.test.tsubject.options[sind].text=="Urdu"))
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="Zuban-O-Adab Ki Tareekh";
+  document.test.tbook.options[1].value="flipbook.htm?kuza1=1-1"
+  document.test.tbook.options[2].text="Urdu Qwaid Aur Insha";
+  document.test.tbook.options[2].value="flipbook.htm?juuq1=1-1"
+  document.test.tbook.options[3].text="Izhar Aur Zara-e-Izhar";
+  document.test.tbook.options[3].value="flipbook.htm?kuiz1=1-1"
+
+
+  }
+
+
+  else if(document.test.tsubject.options[sind].text=="..Select Subject..")
+  {
+  document.test.tbook.options[0].text="..Select Book Title..";
+  document.test.tbook.options[1].text="";
+  }
+  }
+  }
+
+	 </script>
+
+
+  <form name=test ><input type="hidden" name="nccharset" value="E384DD46">
+  <table width="100%" id="select_clr" cellspacing="0">
+  <tr>
+  <td width="30%" style="background:#efa168;" height="50">
+  <div>
+
+  </div>
+  </td>
+  <td width="70%" align="left"  height="50" style="background:#efa168;"><select name=tclass style="margin:1px" onChange="change()">
+  <option value=-1>..Select Class..</option>
+  <option value=1>Class I</option>
+  <option value=2>Class II</option>
+  <option value=3>Class III</option>
+  <option value=4>Class IV</option>
+  <option value=5>Class V</option>
+  <option value=6>Class VI</option>
+  <option value=7>Class VII</option>
+  <option value=8>Class VIII</option>
+  <option value=9>Class IX</option>
+  <option value=10>Class X</option>
+  <option value=11>Class XI</option>
+  <option value=12>Class XII</option>
+  <option value=13>Class XI & XII Combined</option>
+  </select>
+  <select name=tsubject  style="margin:1px" onChange="change1(this.form.tsubject.selectedIndex)">
+						  <option value=-1>..Select Subject..</option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+  <option></option>
+  <option></option>
+  <option></option>
+  <option></option>
+  <option></option>
+  <option></option>
+		<option></option>
+  <option></option>
+  </select>
+
+  <select name=tbook style="margin:1px">
+						  <option value=-1>..Select Book Title...</option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+						  <option></option>
+	  					  <option></option>
+	  					  <option></option>
+  </select>
+  <a href="material.html" target="material"><input name="button" type=button onClick="" value="Go"  ></a></td>
+
+  <!--<td width="30%" style="background:#6B2F03; height="30"><a href="http://epathshala.nic.in/index.php/license/" target="_blank">License</td>-->
+  </tr>
+</table>
+<br>
+<iframe src="book.html" frameborder="1" height="600px" width="100%" name="material"></iframe>
+
+
+<!-- <script>(function(){var js,fs,d=document,id="tars-widget-script",b="https://tars-file-upload.s3.amazonaws.com/bulb/";
+  if(!d.getElementById(id)){js=d.createElement("script");
+  js.id=id;js.type="text/javascript";js.src=b+"js/widget.js";fs=d.getElementsByTagName("script")[0];fs.parentNode.insertBefore(js,fs)}})();
+  window.tarsSettings = {"convid": "q4lp53", "href": "https://chatbot.hellotars.com/conv/q4lp53"};</script> -->
+
+</body>
+</html>

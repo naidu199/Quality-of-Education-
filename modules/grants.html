@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grants and Loans</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10px;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 300px;
+			flex-direction: row;
+			background-color: rgba(253, 243, 230, 0.774);
+
+        }
+
+        .flex-box {
+            width: 35%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.932);
+			height: 160px;
+			margin-top: 30px;
+			background-color: rgb(159, 211, 231);
+			cursor: pointer;
+        }
+		.flex-box:hover{
+			background-color: rgb(94, 197, 238);
+		}
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+			margin-top: 2px;
+        }
+
+        p {
+            font-size: 16px;
+        }
+
+        .page-info {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .page-info h1 {
+            font-size: 36px;
+        }
+
+        .page-info p {
+            font-size: 20px;
+			justify-content: center;
+        }
+		@media(max-width:650px)
+		{
+			.container{
+				flex-direction: column;
+				height: 620px;
+			}
+			.flex-box{
+				width: 80%;
+				height: 220px;
+			}
+		}
+    </style>
+</head>
+<body>
+    <div class="page-info">
+        <h1> Grants and Loans </h1>
+        <p>
+            This page provides information about grants and loans, including what they are and how they work. <br> Explore the details below to learn more about these financial resources.
+        </p>
+    </div>
+    <div class="container">
+        <div class="flex-box" onclick="window.open('https://serb.gov.in/page/english/research_grants');" >
+            <h1>Grants</h1>
+            <p>
+                Grants are non-repayable funds provided by governments, organizations, or institutions to individuals, businesses, or nonprofits for various purposes, such as education, research, or community development. They are typically awarded based on specific criteria and do not require repayment.
+            </p>
+        </div>
+        <div class="flex-box" onclick="window.open('https://www.india.gov.in/spotlight/jansamarth'); " >
+            <h1>Loans</h1>
+            <p>
+                Loans are financial instruments that provide individuals or businesses with a sum of money that must be repaid, often with interest, over a specified period. Loans can be obtained from banks, credit unions, or other financial institutions and are used for various purposes, including purchasing a home, funding education, or starting a business.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
