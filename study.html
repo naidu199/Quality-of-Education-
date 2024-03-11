@@ -1,0 +1,759 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Epathshala | Learning On The Go</title>  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>-->
+    <script type="text/javascript" src="assets/js/jquery 1.11.1.js"></script>
+
+<script type="text/javascript" src="asset/js/stepcarousel.js"></script>
+
+
+
+<script type="text/javascript">
+
+stepcarousel.setup({
+  galleryid: 'mygallery', //id of carousel DIV
+  beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+  panelclass: 'panel', //class of panel DIVs each holding content
+  autostep: {enable:true, moveby:1, pause:3000},
+  panelbehavior: {speed:500, wraparound:true, wrapbehavior:'slide', persist:true},
+  defaultbuttons: {enable: true, moveby: 1, leftnav: ['asset/images/left-arrow2.png', -55, 40], rightnav: ['asset/images/right-arrow2.png', 10, 40]},
+  statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+  contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+})
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+	$(".dropdown, .btn-group").hover(function(){
+		var dropdownMenu = $(this).children(".dropdown-menu");
+		if(dropdownMenu.is(":visible")){
+			dropdownMenu.parent().toggleClass("open");
+		}
+	});
+});
+</script>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://epathshala.nic.in/assets/css/font-open-sans.css">
+
+  <link rel="stylesheet" href="https://epathshala.nic.in/asset/css/bootstrap1.min.css">
+  <link rel="stylesheet" href="https://epathshala.nic.in/asset/css/bootstrap.min.css">
+  <!--<link rel="stylesheet" href="asset/css/bootstrap.min_new.css"> -->
+<link rel="stylesheet" href="https://epathshala.nic.in/asset/css/bootstrap.css">
+<link href="https://epathshala.nic.in/asset/css/bootstrap-responsive.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://epathshala.nic.in/asset/css/ciet.css">
+  <link rel="stylesheet" href="https://epathshala.nic.in/asset/css/animate.css">
+ <link rel="stylesheet" href="https://epathshala.nic.in/asset/font-awesome/css/font-awesome.min.css">
+ <!-- <link rel="stylesheet" href="asset/css/font-awesome.min.css">-->
+
+  <script src="https://epathshala.nic.in/asset/css/js/touch-slider.js"></script>
+     <script src="https://epathshala.nic.in/asset/css/js/bootstrap.js"></script>
+     <script src="https://epathshala.nic.in/asset/css/js/bootstrap.min.js"></script>
+	<script src="https://epathshala.nic.in/asset/css/js/slider.js"></script>
+	<!--<script src="asset/css/js/jquery.min.js"></script>-->
+	<script src="https://epathshala.nic.in/asset/css/js/jquery.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap.min.js"></script>
+	<script src="https://epathshala.nic.in/asset/css/js/bootstrap-transition.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-alert.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-modal.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-dropdown.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-scrollspy.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-tab.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-tooltip.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-popover.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-button.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-collapse.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-carousel.js"></script>
+    <script src="https://epathshala.nic.in/asset/css/js/bootstrap-typeahead.js"></script>
+  <script>
+$(function(){
+    $('.navbar').affix({
+      offset: {
+        /* Affix the navbar after scroll below header */
+        top: $("header").outerHeight(true)}
+    });
+});</script>
+
+
+   <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+     <script type="text/javascript" src="assets/js/jquery 1.11.0.js"></script>
+
+
+     <!--<script src="http://pixelcog.github.io/parallax.js/js/parallax.min.js"></script>-->
+     <script type="text/javascript" src="assets/js/parallax.js"></script>
+
+
+  </head>
+  <body id="rest_page">
+
+  	<div class="fullpage">
+	<!--start date and time-->
+
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-82389467-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-82389467-1');
+</script>
+
+
+
+
+
+
+<div class="blue">
+  <div class="container">
+
+
+  	<div class="row date_time">
+    <div class="col-sm-3" datehead>
+
+      <p class="date"><script >
+document.write ('<p id="date" style="width: 60%; margin-bottom: -21px;">', new Date().toLocaleString(), '<\/p>')
+if (document.getElementById) onload = function () {
+    setInterval ("document.getElementById ('date').firstChild.data = new Date().toLocaleString()", 50)
+}
+</script></p>
+<style>
+
+   .headertxt_color
+   {
+    font-size: 1em;
+    color: black;
+    font-family: sans-serif;
+    font-family: initial;
+    font-weight: 100;
+  }
+
+
+  .mg0{
+    margin:0px;
+  }
+
+  .dropdown1 {
+  position: relative;
+  display: inline-block;
+  width: 100px;
+
+}
+
+
+.dropdown_btn
+{
+
+    /*background-color: #006dcc;*/
+       /* border-color: rgb(0, 0, 0, 0.1) rgb(0, 0, 0, 0.1) rgb(0, 0, 0, 0.25);
+            /*background-image: linear-gradient(to bottom, #0088cc, #0044cc);*
+                border-radius: 4px;*/
+                        font-size: 16px;
+                        font-family: 'Font Awesome 5 Brands';
+
+                         padding-right: 0px;
+                         border:none;
+                         background-color: white;
+                         margin-top: 10px;
+
+
+color: black;
+/*text-shadow: 0 -1px 0 rgb(0, 0, 0, 0.25);*/
+
+ cursor: pointer;
+
+
+}
+
+.dropdown_btn:hover
+{
+
+
+color:black;
+
+
+}
+.dropdown_content
+{
+  position: fixed;
+  min-width: 66px;
+display: none;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   background-color: #f7f5f3;
+    border: 1px double #11110840;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 19px;
+}
+.dropdown_content a
+{
+ color: black;
+  padding: 6px 5px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+
+  }
+
+  .dropdown_content a:hover
+  {
+
+   /*background-color: #BC8F8F;*/
+
+    font-size: 16px;
+  }
+
+  .dropdown1:hover .dropdown_content
+  {
+    display: block;
+  }
+
+  .dropdown1:hover .dropdown_btn
+  {
+
+    /*background-color: #3e8e41;*/
+  }
+
+  .color_theme
+  {
+
+width:35px;
+height: auto;
+
+  }
+
+  .color_content
+  {
+  position: fixed;
+  min-width: 66px;
+display: none;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+   background-color: #f7f5f3;
+    border: 1px double #11110840;
+    border-radius: 5px;
+    text-align: left;
+    margin-left: 19px;
+  }
+
+
+ /*.choose {
+  position: relative;
+  display: inline-block;
+
+  /*width: 66px;
+  height: 20px;
+    width: 23px;
+
+    border-radius: 5px;
+     padding: 2px;
+}*/
+
+.themes-btn
+{
+ border-color: rgb(0, 0, 0, 0.1) rgb(0, 0, 0, 0.1) rgb(0, 0, 0, 0.25);
+            /*background-image: linear-gradient(to bottom, #0088cc, #0044cc);*/
+                border-radius: 4px;
+
+color: black;
+cursor: pointer;
+
+
+
+
+}
+
+.theme
+{
+  /*position: fixed;*/
+  min-width: 10px;
+/*display: none;*/
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   /*z-index: 1;*/
+   /*background-color: #90b597;*/
+    /*border: 1px double #11110840;*/
+    border-radius: 5px;
+    /*text-align: left;*/
+    /*margin-left: 19px;*/
+}
+.theme a
+{
+ color: black;
+
+  text-decoration: none;
+  display: initial;
+  text-align: center;
+
+  /*margin-right: 8px;*/
+
+
+  }
+
+  .theme a:hover
+  {
+
+   /*background-color: #BC8F8F;*/
+
+    font-size: 16px;
+  }
+
+  .choose:hover .theme
+  {
+    display: block;
+  }
+.colortheme_img
+{
+height:18px !important;
+width:20px !important;
+
+
+}
+
+  .topheader_color
+  {
+font-size: 1.2em;
+       font-family: 'Font Awesome 5 Brands';
+    color: black;
+    font-weight: bold;
+
+
+  }
+  .icon_size
+  {
+height:20px;
+width: 22px;
+
+
+  }
+
+
+
+</style>
+
+    </div>
+    <div class="col-sm-9">
+
+        <!--rmz-->
+        <ul class="list-inline mg0">
+            <li>
+              <a href="#content" class="topheader_color" >Skip to Main Content</a></li>
+
+<li>
+              <a href="#nav" class="topheader_color" >Skip to Navigation</a></li>
+
+
+               <!-- -->
+            <li>
+                <a class="topheader_color">Text Size:</a>  <a class="font-button minus headersmalltext">A&minus;</a> &nbsp;<a class="font-button normal headertext_color ">A</a>&nbsp; <a class="font-button plus headerbigtext">A+</a>
+            </li>
+
+
+
+            <li><a href="sitemap.php" class="topheader_color">Sitemap</a></li>
+            <li>
+              <form class="mg0" action="searchResult.php" method="GET"><input type="text" name="search" placeholder="Search" class="form-control input-sm" id="inputsm">
+              </form>
+            </li>
+
+
+            <li>
+  <div class="dropdown1" style="font-size: 1.9rem;">
+   <!-- <i class="fas fa-language icon_size"></i>-->
+<button class="dropdown_btn dropdown-toggle" data-toggle="dropdown" >Language </button>
+ <div class="dropdown_content">
+
+</div>
+ </div>
+
+
+
+
+
+
+
+</li>
+
+
+
+<li>
+
+
+  <!--<div class="choose">-->
+   <!-- <span class="themes-btn " ><i class="fas fa-cog fa-lg fa-spin "></i></span>-->
+
+      <div class="theme">
+        <span class="themes-btn " >
+          <!--<i class="fas fa-cog fa-lg fa-spin "></i>-->
+
+          </span>
+
+        <ul>
+
+<a href="javascript:chooseStyle('none', 60);" title="Select Default">
+                        <img class="colortheme_img" src="color/images/normal.gif" alt="Normal Theme" height="16px" width="18px" title="Select Normal Theme"></a>
+
+
+<a href="javascript:chooseStyle('whiteBlack', 60);" title="Select whiteBlack">
+                            <img class="colortheme_img" src="color/images/black.jpg" alt="white on Black Theme" height="18px" width="18px" style="border:1px solid grey;"  title="white on Black Theme"> </a>
+
+
+
+  <a href="javascript:chooseStyle('redBlack', 60);" title="Select redBlack">
+                            <img src="color/images/red.png" alt="Red on Black Theme" height="16px" width="18px"  title="Red on Black Theme"></a>
+
+
+                        <a href="javascript:chooseStyle('blueBlack', 60);" title="Select greenBlack">
+
+                            <img class="colortheme_img" src="color/images/blue.png" alt="blue on Black Theme" height="18px" width="18px"  title="blue on Black Theme"> </a>
+
+
+
+                    <!--   <a href="javascript:chooseStyle('yelGreen', 60);" title="Select yelBlue">
+                            <img class="colortheme_img" src="color/images/blue.png" alt="Blue on black Theme" height="18px" width="18px"  title="Select Yellow on Blue Theme"> </a>
+-->
+
+
+
+
+                        <a href="javascript:chooseStyle('yelBlack', 60);" title="Select yelBlack">
+                            <img src="color/images/yellow.png" alt="Yellow on Black Theme" height="18px" width="18px"  title="Yellow on Black Theme"></a>
+
+                            <a href="javascript:chooseStyle('greenBlack', 60);" title="Select greenBlack">
+
+                            <img class="colortheme_img" src="color/images/green.png" alt="Green on Black Theme" height="18px" width="18px"  title="Green on Black Theme"> </a>
+
+        </ul>
+      </div>
+
+
+
+</li>
+
+ </ul>
+
+    <!--
+    <div class="resizer" style="float:right">
+        <span class="text_size">Text Size:</span>  <a class="font-button minus headersmalltext">A-</a> &nbsp;<a class="font-button normal headertext_color ">A</a>&nbsp; <a class="font-button plus headerbigtext">A+</a>
+
+
+<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Language
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+
+        </ul>
+</div>
+
+
+&nbsp;&nbsp;&nbsp;<form action="searchResult.php" method="GET"><input type="text" name="search" placeholder="Search" class="form-control input-sm" id="inputsm">
+
+
+</form>
+-->
+
+ <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+     <script src="assets/js/jquery1.8.3.js"></script>
+
+
+ <script src="color/jquery.js"></script>
+    <script src="color/jquery-ui.js"></script>
+    <script src="color/jquery.ui.core.js"></script>
+    <script src="color/jquery.colorbox.js"></script>
+    <script src="color/tytabs.jquery.min.js"></script>
+
+    <!--<link href="color/colorbox.css" rel="stylesheet"  />-->
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="redBlack"
+        href="color/redBlack.css" />
+
+ <link rel="alternate stylesheet" type="text/css" media="screen" title="whiteBlack" href="color/whiteBlack.css" />
+
+
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="yelBlack"
+        href="color/yelBlack.css" />
+
+<link rel="alternate stylesheet" type="text/css" media="screen" title="blueBlack"
+        href="color/blueBlack.css" />
+
+
+    <link rel="alternate stylesheet" type="text/css" media="screen" title="greenBlack" href="color/greenBlack.css" />
+
+
+
+
+    <script src="color/switcher.js" type="text/javascript"></script>
+
+
+
+<!--dropdown-->
+
+<!--<link rel="stylesheet" href="dropdownfolder/bootstrap-3.4.1.min.css">
+  <script src="dropdownfolder/jquery-3.5.1.min.js"></script>
+  <script src="dropdownfolder/bootstrap-3.4.1.min.js"></script>
+
+-->
+<!--<script>
+
+  function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+}
+
+</script>-->
+
+    <script>
+        $(function () {
+            $(".font-button").bind("click", function () {
+                var size = parseInt($('body').css("font-size"));
+                if ($(this).hasClass("plus")) {
+                    size = size + 1;
+                } else if ($(this).hasClass("minus")){
+                    size = size - 1;
+                    if (size <= 10) {
+                        size = 10;
+                    }}
+        else if ($(this).hasClass("normal")){
+                    size = 14;
+                    }
+
+else {}
+                $('body').css("font-size", size);
+            });
+        });
+    </script>
+</div>
+  </div>
+
+
+
+
+
+
+  </div>
+</div>
+<!--</div>-->
+<!--end  date and time-->
+
+  <!--start ciet image-->
+<div id="brown-bg">
+<div class="container">
+  <div class="row">
+<div class="col-sm-12 center">
+  <img src="asset/images/logo_new.png" class="img" alt="epathshala header image">
+</div>
+</div>
+</div>
+</div>
+<!--end-ciet image-->
+<!--start-navbar-->
+<div>
+ <div class="navbar navbar-inverse blue1" data-spy="affix" data-offset-top="197" >
+      <div class="navbar-inner" id="nav">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+          <div class="nav-collapse collapse">
+                       <ul class="nav">
+              <li class="" ><a href="index.php?ln=en" class="" data-toggle=""><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home </a></li>
+               <li class="" ><a href="pages.php?id=about-us&ln=en" class="" data-toggle=""><i class="fa fa-info" aria-hidden="true"></i>&nbsp;About</a></li>
+               <li class="dropdown">
+          <a href="epathshala.php?ln=en" ><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Epathshala</a>
+          <ul class="dropdown-menu">
+                          <li><a href="epathshala.php?id=Students&type=eTextbooks&ln=en">Students</a></li>
+            <li class="divider"></li>
+            <li><a href="epathshala.php?id=Teachers&type=eTextbooks&ln=en">Teachers</a></li>
+            <li class="divider"></li>
+            <li><a href="epathshala.php?id=Educators&type=eTextbooks&ln=en">Educators</a></li>
+            <li class="divider"></li>
+            <li><a href="epathshala.php?id=Parents&type=eTextbooks&ln=en">Parents</a></li>
+          </ul>
+        </li>
+              <!--<li class="" ><a href="ebsb.php?ln=en" class="" data-toggle=""><i class="fa fa-globe" aria-hidden="true">
+</i>&nbsp;Bhasha Sangam (EBSB)</a></li>-->
+              <li class="" ><a href="topics.php?ln=en" class="" data-toggle=""><i class="fa fa-qrcode" aria-hidden="true"></i>&nbsp;Access eResources (QR code)</a></li>
+                            <li class="" ><a href="pages.php?id=contact&ln=en" class="" data-toggle=""><i class="fa fa-address-book" aria-hidden="true"></i>
+&nbsp;Contact</a></li>
+
+
+
+            </ul>
+
+
+
+                       </div><!--/.nav-collapse -->
+       </div>
+      </div>
+    </div>
+	</div>
+	<!--end navbar-->
+
+        <!--Total COunt-->
+      <div id="section-stats">
+<div class="container" >
+  <div class="row">
+<div class="col-sm-12">  <h2></h2>
+  <div class="row about_main">
+
+       <iframe style="overflow: auto;" src="wp-content/doc/book/flipbook/flipbook.htm" name="iframe_a" marginwidth="0" marginheight="0" scrolling="no" width="100%" height="1100" frameborder="0"></iframe>
+
+
+
+
+  </div>
+    </div>
+    </div>
+    </div>
+    </div>
+       <!--Total COunt-->
+<!--Footer Start Here -->
+
+<footer>
+
+
+		<style>
+
+	.icon{
+				        height: 72px;
+				        width: 115px;
+
+				        display: inline-block;
+				        margin-right: 5px;
+				        color: white;
+				        text-align: center;
+				        line-height: 42px;
+				    }
+
+</style>
+
+
+    <div >
+
+
+
+
+  <div class="container">
+    	<div class="row" style="padding:1%;">
+          	<div class="col-sm-6"><a href="https://www.education.gov.in/" target="_blank"><img src="asset/images/mhrd-logo-e1502873622401.png" alt="mhrd logo"></a>&nbsp;<a href="https://india.gov.in" target="_blank"><img src="asset/images/india_gov_logo.png" alt="National portal of india"></a>&nbsp;<a href="https://www.g20.in/" target="_blank"><img src="https://ncert.nic.in/images/g20-logo.png" style="max-width:100px" alt="G20"></a>
+              &nbsp;<a href="https://mygov.in" target="_blank"><img src="asset/images/my_gov_logo.png" alt="my gov site"></a>&nbsp;<a href="https://data.gov.in" target="_blank"><img src="asset/images/datagov_logo.png" alt="open government data platform india (OGD)"></a>&nbsp;<a href="https://amritmahotsav.nic.in/" target="_blank"><img src="asset/images/AKAM-logo.png" alt=""></a>&nbsp;<!--<a href="http://missionlife-moefcc.nic.in/" target="_blank"><img class="icon" src="asset/images/Mission-LiFE-Final-Logo.png" alt=""></a>-->
+
+
+<!--rajni-->
+
+
+      <div class="col-sm-6" style="border-left:1px solid #eaeaea;color:#666 !important ">
+
+
+        <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fepathshala.nic.in%2F" target="_blank" title="Valid CSS! External website that opens in a new window" tabindex="2085"><img alt="Valid XHTML 1.0 Transitional" src="https://www.w3.org/Icons/valid-xhtml10" style="width:80px; height:22px">
+        </a>
+
+
+    <a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fepathshala.nic.in%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank" title="Valid CSS! External website that opens in a new window" tabindex="2087">
+      <img alt="Valid CSS!" src="https://jigsaw.w3.org/css-validator/images/vcss" style="border:0; width:80px;
+      height:22px">
+    </a>
+
+<!--<a href="http://jigsaw.w3.org/css-validator/check/referer">
+    <img style="border:0;width:80px;height:24px"
+        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+        alt="Valid CSS!" />
+    </a>-->
+
+
+
+      </div>
+
+              </div>
+
+    	<div class="col-sm-6 footer-links-new" style="border-left:1px solid #eaeaea;color:#666 !important">
+         <a href="https://itpd.ncert.gov.in" target="_blank">NISHTHA</a> &nbsp;I&nbsp; <a href="#" target="_blank">N&#173;C&#173;E&#173;R&#173;T</a> &nbsp;I&nbsp; <a href="https://ciet.nic.in" target="_blank">CIET</a> &nbsp;I&nbsp; <a href="https://ictcurriculum.gov.in" target="_blank">ICT Curriculum</a> &nbsp;I&nbsp; <a href="https://swayam.gov.in" target="_blank">SWAYAM</a> <!--&nbsp;I&nbsp; <a href="https://nroer.gov.in" target="_blank">NROER</a> -->&nbsp;I&nbsp; <a href="https://epathshala.nic.in/pages.php?id=privacy-policy&ln=en">Privacy Policy</a> &nbsp;I&nbsp; <a href="https://epathshala.nic.in/pages.php?id=license&ln=en">License</a> &nbsp;I&nbsp; <a href="#">Feedback</a> &nbsp;I&nbsp; <a href="https://ncert.nic.in/disclo_un_rti.php?ln=">R&#173;T&#173;I</a>&nbsp;I&nbsp;<a href="links.php">See More</a>
+
+         <div style="border-top:1px solid #eaeaea;"><br/>
+         <div class="mb-1"><strong>Important Helpline Numbers</strong></div>
+							<div class="mb-2"><img src="asset/images/telephone.png" style="height:24px" align="middle"><span> Women Helpline Number : 7827170170</span>&nbsp;<strong>I</strong>&nbsp;<img src="asset/images/telephone.png" style="height:24px" align="middle"><span> Cybercrime Reporting Number : 1930</span></div>
+							<div class="mb-2"></div>
+
+
+
+
+
+        </div>
+          </div>
+      <div class="copyright_style">Copyright © 2023 | Developed By C&#173;I&#173;E&#173;T, N&#173;C&#173;E&#173;R&#173;T | Hosted By N&#173;I&#173;C</div>
+  </div>
+
+  </div>
+
+
+
+<!--rajni-->
+
+     <div class="brown-bg">
+  	<div class="container">
+    	<div class="row">
+          	<div class="col-sm-5 white-heading">   | Connect with us at: <a href="https://www.facebook.com/ncertofficial" target="_blank"><img src="asset/images/facebook.png" alt="facebook icon image" class="img4" style="height:24px" ></a> <a href="https://twitter.com/ncert" target="_blank"><img src="asset/images/twitter.png" class="img4" alt="twitter image "  style="height:24px"></a></div>
+          <div class="col-sm-7 white-heading" style="text-align:right"><span><img src="asset/images/envelope2.png" alt="envelope icon image" class="img4" style="height:24px" > dceta.n&#173;c&#173;e&#173;r&#173;t&#173;@&#173;n&#173;i&#173;c.in | epathshala.helpdesk@ciet.nic.in | epathshala.upload@ciet.nic.in</span><span><img src="asset/images/telephone.png" alt="telephone icon image" class="img4" style="height:24px" > +91 8800440559 | +91 8448440632</span><br/><span><img src="asset/images/placeholder3.png" alt="placeholder image" class="img4" style="height:24px"
+            > CIET, N&#173;C&#173;E&#173;R&#173;T, Sri Aurobindo Marg, New Delhi-110016</span></div>
+          <!--<div class="col-sm-4 white-heading"><img src="asset/images/map.png" width="70px" align="left"><h4>Visit <span style="color:#F7931E !important">Us</span></h4>CIET, NCERT, Sri Aurobindo Marg, New Delhi-16</div>-->
+          </div> </div>
+    </div>
+  </div>
+
+
+ <!--Footer ends here-->
+
+  </footer>
+
+  <script src="asset/js/scrolla.jquery.min.js"></script>
+
+  <script>
+
+  $('.animate').scrolla({
+    mobile: false,
+    once: true
+  });
+
+  </script>
+
+   <a href="javascript:" id="return-to-top"><span id="top">	&#x2191;</span></a>
+
+
+ </div>
+
+<!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>-->
+    <script type="text/javascript" src="assets/js/jquery 2.1.3.js"></script>
+
+
+<script >// ===== Scroll to Top ====
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+//# sourceURL=pen.js
+</script>
+
+  </body>
+</html>

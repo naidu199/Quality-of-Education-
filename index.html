@@ -1,0 +1,865 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Edu Bridge</title>
+
+	<link rel="icon" href="images/logo.png" sizes=16x16>
+
+	<link rel="stylesheet" href="modules.css">
+
+    <link rel="stylesheet" href="assets/css/fancybox3.3.0.css">
+
+    <script src="assets/js/fancybox3.3.0.js"></script>
+
+    <link rel="stylesheet" href="assets/css/v5.0.6.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script src="asset/js/stepcarousel.js"></script>
+	<script>
+        stepcarousel.setup({
+            galleryid: 'mygallery', //id of carousel DIV
+            beltclass: 'belt', //class of inner "belt" DIV containing all the panel DIVs
+            panelclass: 'panel', //class of panel DIVs each holding content
+            autostep: {
+                enable: true,
+                moveby: 1,
+                pause: 3000
+            },
+            panelbehavior: {
+                speed: 500,
+                wraparound: true,
+                wrapbehavior: 'slide',
+                persist: true
+            },
+            defaultbuttons: {
+                enable: true,
+                moveby: 1,
+                leftnav: ['asset/images/left-arrow2.png', -55, 40],
+                rightnav: ['asset/images/right-arrow2.png', 10, 40]
+            },
+            statusvars: ['statusA', 'statusB', 'statusC'], //register 3 variables that contain current panel (start), current panel (last), and total panels
+            contenttype: ['inline'] //content setting ['inline'] or ['ajax', 'path_to_external_file']
+        })
+    </script>
+    <script>
+        $(document).ready(function() {
+            $(".dropdown, .btn-group").hover(function() {
+                var dropdownMenu = $(this).children(".dropdown-menu");
+                if (dropdownMenu.is(":visible")) {
+                    dropdownMenu.parent().toggleClass("open");
+                }
+            });
+        });
+    </script>
+
+<link rel="stylesheet" href="assets/css/font-open-sans.css">
+
+<link rel="stylesheet" href="asset/css/bootstrap1.min.css">
+<link rel="stylesheet" href="asset/css/bootstrap.min.css">
+<!--<link rel="stylesheet" href="asset/css/bootstrap.min_new.css"> -->
+<link rel="stylesheet" href="asset/css/bootstrap.css">
+<link href="asset/css/bootstrap-responsive.css" rel="stylesheet">
+<link rel="stylesheet" href="asset/css/ciet.css">
+<link rel="stylesheet" href="asset/css/animate.css">
+<link rel="stylesheet" href="asset/font-awesome/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="asset/css/font-awesome.min.css">-->
+<!-- <link rel="stylesheet" href="logins/login.css"> -->
+
+<script src="asset/css/js/touch-slider.js"></script>
+<script src="asset/css/js/bootstrap.js"></script>
+<script src="asset/css/js/bootstrap.min.js"></script>
+<script src="asset/css/js/slider.js"></script>
+<!--<script src="asset/css/js/jquery.min.js"></script>-->
+<script src="asset/css/js/jquery.js"></script>
+<script src="asset/css/js/bootstrap.min.js"></script>
+<script src="asset/css/js/bootstrap-transition.js"></script>
+<script src="asset/css/js/bootstrap-alert.js"></script>
+<script src="asset/css/js/bootstrap-modal.js"></script>
+<script src="asset/css/js/bootstrap-dropdown.js"></script>
+<script src="asset/css/js/bootstrap-scrollspy.js"></script>
+<script src="asset/css/js/bootstrap-tab.js"></script>
+<script src="asset/css/js/bootstrap-tooltip.js"></script>
+<script src="asset/css/js/bootstrap-popover.js"></script>
+<script src="asset/css/js/bootstrap-button.js"></script>
+<script src="asset/css/js/bootstrap-collapse.js"></script>
+<script src="asset/css/js/bootstrap-carousel.js"></script>
+<script src="asset/css/js/bootstrap-typeahead.js"></script>
+
+<script>
+	$(function() {
+		$('.navbar').affix({
+			offset: {
+				/* Affix the navbar after scroll below header */
+				top: $("header").outerHeight(true)
+			}
+		});
+	});
+</script>
+
+
+<script src="assets/js/jquery1.11.0.js"></script>
+
+<script src="assets/js/parallax.js"></script>
+
+<!-- Matomo -->
+<script>
+	var _paq = _paq || [];
+	/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+	_paq.push(['trackPageView']);
+	_paq.push(['enableLinkTracking']);
+	(function() {
+		var u = "//analytics.ncert.org.in/";
+		_paq.push(['setTrackerUrl', u + 'piwik.php']);
+		_paq.push(['setSiteId', '1']);
+		var d = document,
+			g = d.createElement('script'),
+			s = d.getElementsByTagName('script')[0];
+		g.type = 'text/javascript';
+		g.async = true;
+		g.defer = true;
+		g.src = u + 'piwik.js';
+		s.parentNode.insertBefore(g, s);
+	})();
+</script>
+<style>
+    .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute; /* Position it absolutely within the navigation bar */
+    top: 50%; /* Center it vertically */
+    right: 10px; /* Adjust the right margin as needed */
+    transform: translateY(-50%); /* Center it vertically */
+	height: 30px;
+	/* color: #ff000 */
+}
+</style>
+
+</head>
+<body>
+	<div class="fullpage">
+        <!--start date and time-->
+
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-82389467-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'UA-82389467-1');
+        </script>
+
+
+
+
+
+
+        <div class="blue">
+            <div class="container">
+
+
+                <div class="row date_time">
+                    <div class="col-sm-3" datehead>
+
+                        <p class="date">
+                            <script>
+                                document.write('<p id="date" style="width: 60%; margin-bottom: -21px;">', new Date().toLocaleString(), '<\/p>')
+                                if (document.getElementById) onload = function() {
+                                    setInterval("document.getElementById ('date').firstChild.data = new Date().toLocaleString()", 50)
+                                }
+                            </script>
+                        </p>
+                        <style>
+                            .headertxt_color {
+                                font-size: 1em;
+                                color: black;
+                                font-family: sans-serif;
+                                font-family: initial;
+                                font-weight: 100;
+                            }
+
+                            .mg0 {
+                                margin: 0px;
+                            }
+
+                            .dropdown1 {
+                                position: relative;
+                                display: inline-block;
+                                width: 100px;
+                            }
+
+                            .dropdown_btn {
+                                font-size: 16px;
+                                font-family: 'Font Awesome 5 Brands';
+                                padding-right: 0px;
+                                border: none;
+                                background-color: white;
+                                margin-top: 10px;
+                                color: black;
+                                /*text-shadow: 0 -1px 0 rgb(0, 0, 0, 0.25);*/
+                                cursor: pointer;
+                            }
+
+                            .dropdown_btn:hover {
+                                color: black;
+                            }
+
+                            .dropdown_content {
+                                position: fixed;
+                                min-width: 66px;
+                                display: none;
+                                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                z-index: 1;
+                                background-color: #f7f5f3;
+                                border: 1px double #11110840;
+                                border-radius: 5px;
+                                text-align: left;
+                                margin-left: 19px;
+                            }
+
+                            .dropdown_content a {
+                                color: black;
+                                padding: 6px 5px;
+                                text-decoration: none;
+                                display: block;
+                                font-size: 15px;
+                            }
+
+                            .dropdown_content a:hover {
+                                /*background-color: #BC8F8F;*/
+                                font-size: 16px;
+                            }
+
+                            .dropdown1:hover .dropdown_content {
+                                display: block;
+                            }
+
+                            /* .dropdown1:hover .dropdown_btn {
+                                background-color: #3e8e41;
+                            } */
+
+                            .color_theme {
+                                width: 35px;
+                                height: auto;
+                            }
+
+                            .color_content {
+                                position: fixed;
+                                min-width: 66px;
+                                display: none;
+                                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                z-index: 1;
+                                background-color: #f7f5f3;
+                                border: 1px double #11110840;
+                                border-radius: 5px;
+                                text-align: left;
+                                margin-left: 19px;
+                            }
+
+                            .themes-btn {
+                                border-color: rgb(0, 0, 0, 0.1) rgb(0, 0, 0, 0.1) rgb(0, 0, 0, 0.25);
+                                /*background-image: linear-gradient(to bottom, #0088cc, #0044cc);*/
+                                border-radius: 4px;
+                                color: black;
+                                cursor: pointer;
+                            }
+
+                            .theme {
+                                /*position: fixed;*/
+                                min-width: 10px;
+                                /*display: none;*/
+                                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                                /*z-index: 1;*/
+                                /*background-color: #90b597;*/
+                                /*border: 1px double #11110840;*/
+                                border-radius: 5px;
+                                /*text-align: left;*/
+                                /*margin-left: 19px;*/
+                            }
+
+                            .theme a {
+                                color: black;
+                                text-decoration: none;
+                                display: initial;
+                                text-align: center;
+                                /*margin-right: 8px;*/
+                            }
+
+                            .theme a:hover {
+                                /*background-color: #BC8F8F;*/
+                                font-size: 16px;
+                            }
+
+                            .choose:hover .theme {
+                                display: block;
+                            }
+
+                            .colortheme_img {
+                                height: 18px !important;
+                                width: 20px !important;
+                            }
+
+                            .topheader_color {
+                                font-size: 1.2em;
+                                font-family: 'Font Awesome 5 Brands';
+                                color: black;
+                                font-weight: bold;
+                            }
+
+                            .icon_size {
+                                height: 20px;
+                                width: 22px;
+                            }
+                        </style>
+
+                    </div>
+                    <div class="col-sm-9">
+
+                        <!--rmz-->
+                        <ul class="list-inline mg0">
+                            <li>
+                                <a href="#content" class="topheader_color"> Main Content</a></li>
+
+                            <li>
+                                <a href="#nav" class="topheader_color"> Navigation</a></li>
+
+
+                            <!-- -->
+                            <li style="cursor: pointer;">
+                                <a class="topheader_color">Text Size:</a> <a class="font-button minus headersmalltext">A&minus;</a> &nbsp;<a class="font-button normal headertext_color ">A</a>&nbsp; <a class="font-button plus headerbigtext">A+</a>
+                            </li>
+
+
+
+                            <li><a href="sitemap.php" class="topheader_color">Sitemap</a></li>
+                            <li>
+                                <form class="mg0" action="searchResult.php" method="GET"><input type="text" name="search" placeholder="Search" class="form-control input-sm" id="inputsm">
+                                </form>
+                            </li>
+
+
+                            <li>
+                                <div class="dropdown1" style="font-size: 1.9rem;">
+                                    <!-- <i class="fas fa-language icon_size"></i>-->
+                                    <button class="dropdown_btn dropdown-toggle" data-toggle="dropdown">Language </button>
+                                    <div class="dropdown_content">
+										<span class="translate" id="google_translate_element"></span>
+                                    </div>
+									<style>.goog-te-banner-frame.skiptranslate, .goog-te-gadget-simple img{
+										display: none !important;
+									}</style>
+                                </div>
+								<script type="text/javascript">
+									function googleTranslateElementInit(){
+									  new google.translate.TranslateElement({
+										defaultLanguage: 'en',
+										pageLanguage: 'en',
+										includedLanguages: 'en,te,hi,ml,ta,gu,kn,pa,sa',
+										layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+										autoDisplay:false,
+										multilanguagePage: true}, 'google_translate_element')};
+								</script>
+								<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+                            </li>
+                            <li>
+                                <div class="theme">
+                                    <span class="themes-btn ">
+          </span>
+                                    <ul>
+
+                                        <a href="javascript:chooseStyle('none', 60);" title="Select Default">
+                        <img class="colortheme_img" src="color/images/normal.gif" alt="Normal Theme" height="16px" width="18px" title="Select Normal Theme"></a>
+
+
+                                        <a href="javascript:chooseStyle('whiteBlack', 60);" title="Select whiteBlack">
+                            <img class="colortheme_img" src="color/images/black.jpg" alt="white on Black Theme" height="18px" width="18px" style="border:1px solid grey;"  title="white on Black Theme"> </a>
+
+
+
+                                        <a href="javascript:chooseStyle('redBlack', 60);" title="Select redBlack">
+                            <img src="color/images/magenta.png" alt="Red on Black Theme" height="16px" width="18px"  title="Red on Black Theme"></a>
+
+
+                                        <a href="javascript:chooseStyle('blueBlack', 60);" title="Select greenBlack">
+
+                            <img class="colortheme_img" src="color/images/cyan.jpeg" alt="blue on Black Theme" height="18px" width="18px"  title="blue on Black Theme"> </a>
+
+                                        <a href="javascript:chooseStyle('yelBlack', 60);" title="Select yelBlack">
+                            <img src="color/images/yellow.png" alt="Yellow on Black Theme" height="18px" width="18px"  title="Yellow on Black Theme"></a>
+
+                                        <a href="javascript:chooseStyle('greenBlack', 60);" title="Select greenBlack">
+
+                            <img class="colortheme_img" src="color/images/green.png" alt="Green on Black Theme" height="18px" width="18px"  title="Green on Black Theme"> </a>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>-->
+                        <script src="assets/js/jquery1.8.3.js"></script>
+                        <script src="color/jquery.js"></script>
+                        <script src="color/jquery-ui.js"></script>
+                        <script src="color/jquery.ui.core.js"></script>
+                        <script src="color/jquery.colorbox.js"></script>
+                        <script src="color/tytabs.jquery.min.js"></script>
+
+                        <link rel="alternate stylesheet" type="text/css" media="screen" title="redBlack" href="color/redBlack.css" />
+
+                        <link rel="alternate stylesheet" type="text/css" media="screen" title="whiteBlack" href="color/whiteBlack.css" />
+
+                        <link rel="alternate stylesheet" type="text/css" media="screen" title="yelBlack" href="color/yelBlack.css" />
+
+                        <link rel="alternate stylesheet" type="text/css" media="screen" title="blueBlack" href="color/blueBlack.css" />
+
+                        <link rel="alternate stylesheet" type="text/css" media="screen" title="greenBlack" href="color/greenBlack.css" />
+
+                        <script src="color/switcher.js" type="text/javascript"></script>
+
+                        <script>
+                            $(function() {
+                                $(".font-button").bind("click", function() {
+                                    var size = parseInt($('body').css("font-size"));
+                                    if ($(this).hasClass("plus")) {
+                                        size = size + 1;
+                                    } else if ($(this).hasClass("minus")) {
+                                        size = size - 1;
+                                        if (size <= 10) {
+                                            size = 10;
+                                        }
+                                    } else if ($(this).hasClass("normal")) {
+                                        size = 14;
+                                    } else {}
+                                    $('body').css("font-size", size);
+                                });
+                            });
+                        </script>
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <div id="brown-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 center">
+                        <img src="asset/images/banner1.png" class="img" alt="epathshala header image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="navbar navbar-inverse blue1" data-spy="affix" data-offset-top="197">
+                <div class="navbar-inner" id="nav">
+                    <div class="container">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- <div class="menu-icon" onclick="toggleMenu()"> -->
+            <!-- <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <script>
+            function toggleMenu() {
+                const menu = document.getElementById("menu");
+                menu.classList.toggle("active");
+            }
+        </script> -->
+                        <div class="nav-collapse collapse" style="left: 20%; padding-top: 10px;">
+                            <ul class="nav">
+                                <li class=""><a href="#brown-bg" class="" data-toggle=""><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home </a></li>
+                                <li class=""><a href="#about-us" class="" data-toggle=""><i class="fa fa-info" aria-hidden="true"></i>&nbsp;About</a></li>
+                                <li class=""><a href="#modules" class="" data-toggle=""><i class="fa fa-qrcode" aria-hidden="true"></i>&nbsp;All Services</a></li>
+                                <li class=""><a href="#" class="" data-toggle=""><i class="fa fa-address-book" aria-hidden="true"></i>&nbsp;Contact</a></li>
+								<li class="dropdown">
+									<a href="#"><i class="fa fa-user" aria-hidden="true"></i>&nbsp;LogIn</a>
+									<ul class="dropdown-menu">
+										<li><a href="logins/login1.html" target="_self" id="loginBtn">Students</a></li>
+										<li class="divider"></li>
+										<li><a href="logins/login1.html">Teachers</a></li>
+										<li class="divider"></li>
+										<li><a href="logins/login1.html">Educators</a></li>
+										<li class="divider"></li>
+										<li><a href="logins/login1.html">Parents</a></li>
+									</ul>
+								</li>
+                            </ul>
+                        </div>
+                        <!--/.nav-collapse -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end navbar-->
+        <!--start - slider-->
+        <div class="fullpage">
+
+
+
+
+            <div id="bootstrap-touch-slider" class="carousel bs-slider fade  control-round indicators-line" data-ride="carousel" data-pause="hover" data-interval="5000">
+
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="1"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="2"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="3"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="4"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="5"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="6"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="7"></li>
+                    <li data-target="#bootstrap-touch-slider" data-slide-to="8"></li>
+
+
+                </ol>
+
+                <!-- Wrapper For Slides -->
+                <div class="carousel-inner" role="listbox">
+
+
+
+
+
+                    <div class="item active ">
+
+                        <a href="https://isroquiz.mygov.in/" target=_blank> <img src="asset/images/chandrayaan.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  ">
+
+                        <a href="https://diksha.gov.in/" target=_blank> <img src="https://ncert.nic.in/images/Diksha_Web_Banner.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  ">
+
+                        <a href="https://ciet.nic.in/nishthaonline.php?&ln=en" target=_blank> <img src="images/vidya-daan.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  ">
+
+                        <a href="http://vsms.sms.gov.in/D0BhUgiVSkl" target=_blank> <img src="https://epathshala.nic.in/upload/NCF_Banner.jpeg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  ">
+
+                        <a href="" target=_blank> <img src="https://ncert.nic.in/images/NEP-3YRS-English.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  ">
+
+                        <a href="https://www.g20.org/en/" target=_blank> <img src="https://ncert.nic.in/images/g20_banner.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  ">
+
+                        <a href="http://missionlife-moefcc.nic.in/" target=_blank> <img src="https://ncert.nic.in/images/MissionLifeBanner.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+                    <div class="item  active">
+
+                        <a href="https://swachhatahiseva.com/" target=_blank> <img src="https://ncert.nic.in/images/Banner_Swachhata_Hi_Seva-en.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+                    <div class="item  active">
+
+                        <a href="https://swachhatahiseva.com/" target=_blank> <img src="https://epathshala.nic.in/upload/Banner_5-01(1).jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+                        <div class="item  active">
+
+                            <a href="#" target=_blank> <img src="images/Ek-Bharat-Sanskriti-Sangam.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+                        <div class="item  active">
+
+                        <a href="#" target=_blank> <img src="images/amritstation.jpg"  alt="" class= 'slide-image img1'/></a></div>
+
+
+
+
+                    <!-- End of Slide -->
+
+
+                </div>
+                <!-- End of Wrapper For Slides -->
+
+                <!-- Left Control -->
+                <a class="left carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="prev">
+                <img src="asset/images/left_arrownew.png" alt="pp" class="img3"/><span class="fa fa-angle-left" aria-hidden="true"></span>
+                 <span class="sr-only">Previous</span>
+            </a>
+
+                <!-- Right Control -->
+                <a class="right carousel-control" href="#bootstrap-touch-slider" role="button" data-slide="next">
+               <img src="asset/images/right_arrownew.png" class="img3" alt="pp"/> <span class="fa fa-angle-right" aria-hidden="true"></span>
+                <span class="sr-only"> Next</span>
+            </a>
+
+            </div>
+
+        </div>
+        </div>
+
+	<!-- modules -->
+	<div class="modules" id="modules">
+		<main>
+		<div class="main-content">
+			<div class="first one">
+				<div class="content">
+					<h3 style="font-size: 20px;">COMMUNICATION SKILLS</h3>
+					<!-- <p>Improve your communication skills through audio-visual interactive tools.</p> -->
+					<a href="modules/frame.html">&nbsp;&nbsp;&nbsp;Visit Portal</a>
+				</div>
+			</div>
+			<div class="first two">
+				<div class="content">
+					<h3 style="font-size: 20px;">SKILL MONITORING</h3>
+					<!-- <p>Monitor the progress of the students through assessments and quizzes.</p> -->
+					<a href="modules/lms/lms.html">&nbsp;&nbsp;&nbsp;Visit Portal</a>
+				</div>
+			</div>
+			<div class="first three">
+				<div class="content">
+					<h3 style="font-size: 20px; ">STUDY MATERIALS</h3>
+					<!-- <p>Access to a wide range of  textbooks, reference books, e-books.</p> -->
+					<a href="modules/studymaterial.html">&nbsp;&nbsp;&nbsp;Visit Portal</a>
+				</div>
+			</div>
+		</div>
+		</main>
+		<main>
+			<div class="main-content ">
+				<div class="first four">
+					<div class="content">
+						<h3 style="font-size: 20px;">EMPLOYMENT</h3>
+						<!-- <p>List of currently available employment opportunities.</p> -->
+						<a href="https://www.naukri.com/">Visit Portal</a>
+					</div>
+				</div>
+				<div class="first five">
+					<div class="content">
+						<h3 style="font-size: 18px; margin: 0px; padding:0px;">RESEARCH & DEVELOPMENT</h3>
+						<!-- <p class="description">Access to a wide range of high-quality R&D papers and all available articles.</p> -->
+						<a href="R&D/www.india.gov.in/topics/science-technology/research-development.html">Visit Portal</a>
+					</div>
+				</div>
+				<div class="first six">
+					<div class="content">
+						<h3 style="font-size: 20px;">GRANTS & LOANS</h3>
+						<!-- <p>Information about grants and scholarships.</p> -->
+						<a href="modules/grants.html">Visit Portal</a>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+
+	<div id="about-ciet-txt">
+        <div class="container" id="about-us">
+
+
+            <div class="row about_main" id="content">
+                <div class="col-sm-3 center boxradius">
+                    <div class="icon "><img src="asset/images/Untitled-1-01.png" alt="pp" /></div>
+                    <h3 class="green-text">Numerous Resources</h3>
+                    <p class="description">The portal and Mobile apps are storehouse of- audios, videos, epubs, flipbooks etc.</p>
+                </div>
+                <div class="col-sm-3 center boxradius">
+                    <div class="icon"><img src="asset/images/Untitled-1-02.png" alt="pp" /></div>
+                    <h3 class="red-text">Easy Access</h3>
+                    <p class="description">Resources can be accessed through laptop, desktop, tablets and smart phones etc.</p>
+                </div>
+                <div class="col-sm-3 center boxradius">
+                    <div class="icon "><img src="asset/images/Untitled-1-03.png" alt="pp" /></div>
+                    <h3 class="blue-text">Multilingual</h3>
+                    <p class="description">Resources are available in multiple languages i.e. Hindi, English, Malayalam, Telugu</p>
+                </div>
+                <div class="col-sm-3 center boxradius">
+                    <div class="icon "><img src="images/oral 1.png" alt="pp" /></div>
+                    <h3 class="orange-text">Communication</h3>
+                    <p class="description"> Enhancing communication skills through an Artificial Intelligence-driven oral assessment tool</p>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class="frame">
+        <iframe src="carousel.html" frameborder="1" width="99%"  height="350px" id="about"></iframe>
+        </div>
+<br><br><br><br>
+
+<footer>
+<div class="foot">
+<section class="mb-4">
+
+    <!--Section heading-->
+    <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+    <!--Section description-->
+    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+        a matter of hours to help you.</p>
+
+    <div class="row">
+
+        <!--Grid column-->
+        <div class="col-md-9 mb-md-0 mb-5">
+            <form id="contact-form" name="contact-form" action="#" method="POST">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="name" class="">Your name</label>
+
+                            <input type="text" id="name" name="name" class="form-control">
+                            <!-- <label for="name" class="">Your name</label> -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <label for="email" class="">Your email</label>
+
+                            <input type="email" id="email" name="email" class="form-control" style="height: 25px;">
+                            <!-- <label for="email" class="">Your email</label> -->
+                        </div>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="md-form mb-0">
+                            <label for="subject" class="">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control">
+
+                        </div>
+                    </div>
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+
+                        </div>
+
+                    </div>
+                </div>
+                <!--Grid row-->
+
+            </form>
+
+            <div class="text-center text-md-left">
+                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                    <p>BHIMAVARM,INDIA</p>
+                </li>
+
+                <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                    <p>+ 01 234 567 89</p>
+                </li>
+
+                <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                    <p>eduBridge1326@gmail.com</p>
+                </li>
+            </ul>
+        </div>
+        <!--Grid column-->
+
+    </div>
+
+</section>
+</div>
+        </footer>
+
+
+    <script src="asset/js/scrolla.jquery.min.js"></script>
+
+    <script>
+        $('.animate').scrolla({
+            mobile: false,
+            once: true
+        });
+    </script>
+
+    <a href="javascript:" id="return-to-top"><span id="top">	&#x2191;</span></a>
+
+
+
+
+    <!--<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>-->
+    <script src="https://epathshala.nic.in/assets/js/jquery2.1.3.js"></script>
+
+
+      <!-- chatbot -->
+      <script>(function(){var js,fs,d=document,id="tars-widget-script",b="https://tars-file-upload.s3.amazonaws.com/bulb/";if(!d.getElementById(id)){js=d.createElement("script");js.id=id;js.type="text/javascript";
+      js.src=b+"js/widget.js";fs=d.getElementsByTagName("script")[0];fs.parentNode.insertBefore(js,fs)}})();window.tarsSettings = {"convid":"q4lp53"};</script>
+
+    <script>
+        // ===== Scroll to Top ====
+        $(window).scroll(function() {
+            if ($(this).scrollTop() >= 50) { // If page is scrolled more than 50px
+                $('#return-to-top').fadeIn(200); // Fade in the arrow
+            } else {
+                $('#return-to-top').fadeOut(200); // Else fade out the arrow
+            }
+        });
+        $('#return-to-top').click(function() { // When arrow is clicked
+            $('body,html').animate({
+                scrollTop: 0 // Scroll to top of body
+            }, 500);
+        });
+        //# sourceURL=pen.js
+    </script>
+
+    <script src="https://epathshala.nic.in/assets/js/jquery.slim.min.js"></script>
+    <script>
+        $(".toggle-switch").on("click", function(event) {
+            2
+            $("body").toggleClass("dark");
+            3
+        });
+    </script>
+</body>
+</html>
